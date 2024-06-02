@@ -1,0 +1,140 @@
+import Highlight from '@site/src/components/Highlight';
+import TableSpan from '@site/src/components/TableSpan';
+
+# 大明
+
+## 科技
+
+
+    ```kroki type=graphviz 
+  	digraph G {
+	rankdir=LR ranksep=1
+	"0016.手推车" [label="0016.手推车|{<f0>20秒| <f1>[10, 20] 黄金 }|提高工人速度\l减少卸货时间\l" fillcolor="#ffaa00" fontname=SimSun shape=record style=filled]
+	"0017.水利" [label="0017.水利|{<f0>20秒| <f1>[10, 20] 黄金 }|提高食物采集量\l降低食物采集时间\l" fillcolor="#ffaa00" fontname=SimSun shape=record style=filled]
+	"0016.手推车":e -> "0017.水利":w [len=2.00]
+	"0019.采矿" [label="0019.采矿|{<f0>10秒| <f1>[10, 20] 黄金 }|提高矿物采集量\l降低矿物采集时间\l" fillcolor="#ffaa00" fontname=SimSun shape=record style=filled]
+	"0016.手推车":e -> "0019.采矿":w [len=2.00]
+	"0018.行政机构" [label="0018.行政机构|{<f0>10秒| <f1>[10, 20] 黄金 }|提高工人人口上限\l提高工人生产速度\l\+\>【仓库】\l" fillcolor="#ffaa00" fontname=SimSun shape=record style=filled]
+	"0016.手推车":e -> "0018.行政机构":w [len=2.00]
+	"0020.农学" [label="0020.农学|{<f0>10秒| <f1>[10, 20] 黄金 }|提高食物采集量\l\+\>【农庄】\l" fillcolor="#ffaa00" fontname=SimSun shape=record style=filled]
+	"0017.水利":e -> "0020.农学":w [len=2.00]
+	"0018.行政机构":e -> "0020.农学":w [len=2.00]
+	"0023.历法" [label="0023.历法|{<f0>10秒| <f1>[10, 20] 黄金 }|提高食物采集量\l" fillcolor="#ffaa00" fontname=SimSun shape=record style=filled]
+	"0020.农学":e -> "0023.历法":w [len=2.00]
+	"0034.农政全书" [label="0034.农政全书|{<f0>10秒| <f1>[10, 20] 黄金 }|提高食物采集量\l采集食物的工人全额提供生产力\l" fillcolor="#ffaa00" fontname=SimSun shape=record style=filled]
+	"0023.历法":e -> "0034.农政全书":w [len=2.00]
+	"0022.矿井勘探" [label="0022.矿井勘探|{<f0>10秒| <f1>[10, 20] 黄金 }|提高矿物采集量\l\+\>【矿场】\l" fillcolor="#ffaa00" fontname=SimSun shape=record style=filled]
+	"0019.采矿":e -> "0022.矿井勘探":w [len=2.00]
+	"0018.行政机构":e -> "0022.矿井勘探":w [len=2.00]
+	"0025.化学" [label="0025.化学|{<f0>10秒| <f1>[10, 20] 黄金 }|提高矿物采集量\l" fillcolor="#ffaa00" fontname=SimSun shape=record style=filled]
+	"0022.矿井勘探":e -> "0025.化学":w [len=2.00]
+	"0036.天工开物" [label="0036.天工开物|{<f0>10秒| <f1>[10, 20] 黄金 }|提高工人移动速度\l提高工人工作速度\l提高矿物采集量\l" fillcolor="#ffaa00" fontname=SimSun shape=record style=filled]
+	"0025.化学":e -> "0036.天工开物":w [len=2.00]
+	"0021.教育" [label="0021.教育|{<f0>10秒| <f1>[10, 20] 黄金 }|提高科研速度\l提高单位生产力\l提高工人人口上限\l提高军事人口上限\l" fillcolor="#ffaa00" fontname=SimSun shape=record style=filled]
+	"0018.行政机构":e -> "0021.教育":w [len=2.00]
+	"0024.经济" [label="0024.经济|{<f0>10秒| <f1>[10, 20] 黄金 }|提高工人人口上限\l提高军事人口上限\l提高单位生产力\l\+\>【市场】\l" fillcolor="#ffaa00" fontname=SimSun shape=record style=filled]
+	"0021.教育":e -> "0024.经济":w [len=2.00]
+	"0037.资本主义萌芽" [label="0037.资本主义萌芽|{<f0>10秒| <f1>[10, 20] 黄金 }|提高建筑速度\l提高单位生产力\l提高工人人口上限\l提高军事人口上限\l提高单位生产速度\l" fillcolor="#ffaa00" fontname=SimSun shape=record style=filled]
+	"0036.天工开物":e -> "0037.资本主义萌芽":w [len=2.00]
+	"0034.农政全书":e -> "0037.资本主义萌芽":w [len=2.00]
+	"0024.经济":e -> "0037.资本主义萌芽":w [len=2.00]
+	"0035.军事训练" [label="0035.军事训练|{<f0>20秒| <f1>[10, 20] 黄金 }|\X\>【民兵】\l\+\>【刀剑手】\l\+\>【长矛兵】\l" fillcolor="#228dff" fontname=SimSun shape=record style=filled]
+	"0006.战术" [label="0006.战术|{<f0>20秒| <f1>[10, 20] 黄金 }|\+\>【弓箭手】\l" fillcolor="#228dff" fontname=SimSun shape=record style=filled]
+	"0035.军事训练":e -> "0006.战术":w [len=2.00]
+	"0008.马镫" [label="0008.马镫|{<f0>20秒| <f1>[10, 20] 黄金 }|\+\>【骑兵】\l" fillcolor="#228dff" fontname=SimSun shape=record style=filled]
+	"0006.战术":e -> "0008.马镫":w [len=2.00]
+	"0010.军事工程" [label="0010.军事工程|{<f0>30秒| <f1>[10, 20] 黄金 }|\+\>【城墙】\l" fillcolor="#228dff" fontname=SimSun shape=record style=filled]
+	"0008.马镫":e -> "0010.军事工程":w [len=2.00]
+	"0012.攻城器械" [label="0012.攻城器械|{<f0>30秒| <f1>[10, 20] 黄金 }|\+\>【冲车】\l" fillcolor="#228dff" fontname=SimSun shape=record style=filled]
+	"0010.军事工程":e -> "0012.攻城器械":w [len=2.00]
+	"0029.火药" [label="0029.火药|{<f0>20秒| <f1>[10, 20] 黄金 }|\X\>【长矛兵】\l\+\>【梨花枪兵】\l" fillcolor="#228dff" fontname=SimSun shape=record style=filled]
+	"0006.战术":e -> "0029.火药":w [len=2.00]
+	"0030.神机营" [label="0030.神机营|{<f0>20秒| <f1>[10, 20] 黄金 }|\+\>【火门枪手】\l" fillcolor="#228dff" fontname=SimSun shape=record style=filled]
+	"0029.火药":e -> "0030.神机营":w [len=2.00]
+	"0031.纪效新书" [label="0031.纪效新书|{<f0>20秒| <f1>[10, 20] 黄金 }|\X\>【火门枪手】\l\+\>【三眼铳兵】\l\+\>【火枪手】\l" fillcolor="#228dff" fontname=SimSun shape=record style=filled]
+	"0030.神机营":e -> "0031.纪效新书":w [len=2.00]
+	"0032.虎蹲炮" [label="0032.虎蹲炮|{<f0>20秒| <f1>[10, 20] 黄金 }|\+\>【虎蹲炮】\l" fillcolor="#228dff" fontname=SimSun shape=record style=filled]
+	"0031.纪效新书":e -> "0032.虎蹲炮":w [len=2.00]
+	"0007.常备军" [label="0007.常备军|{<f0>30秒| <f1>[10, 20] 黄金 }|提高步兵攻击力\l提高步兵防御力\l\+\>【兵营】\l" fillcolor="#228dff" fontname=SimSun shape=record style=filled]
+	"0035.军事训练":e -> "0007.常备军":w [len=2.00]
+	"0033.诸葛连弩" [label="0033.诸葛连弩|{<f0>30秒| <f1>[10, 20] 黄金 }|\X\>【弓箭手】\l\+\>【诸葛连弩】\l" fillcolor="#228dff" fontname=SimSun shape=record style=filled]
+	"0006.战术":e -> "0033.诸葛连弩":w [len=2.00]
+	"0009.复合弓" [label="0009.复合弓|{<f0>30秒| <f1>[10, 20] 黄金 }|提高远程单位攻击力\l提高射击距离\l\+\>【靶场】\l\+\>【驻防点】\l" fillcolor="#228dff" fontname=SimSun shape=record style=filled]
+	"0033.诸葛连弩":e -> "0009.复合弓":w [len=2.00]
+	"0014.军事技术" [label="0014.军事技术|{<f0>30秒| <f1>[10, 20] 黄金 }|提高攻城器械生产速度\l降低攻城器械价格\l\+\>【兵工厂】\l" fillcolor="#228dff" fontname=SimSun shape=record style=filled]
+	"0012.攻城器械":e -> "0014.军事技术":w [len=2.00]
+	"0000.手工业" [label="0000.手工业|{<f0>30秒| <f1>[10, 20] 黄金 }|提高攻击力\l提高防御力\l\+\>【铁匠铺】\l" fillcolor="#65d84b" fontname=SimSun shape=record style=filled]
+	"0001.铸造" [label="0001.铸造|{<f0>30秒| <f1>[10, 20] 黄金 }|提高攻击力\l提高攻击速度\l" fillcolor="#65d84b" fontname=SimSun shape=record style=filled]
+	"0000.手工业":e -> "0001.铸造":w [len=2.00]
+	"0028.棉甲" [label="0028.棉甲|{<f0>30秒| <f1>[10, 20] 黄金 }|提高防御力\l" fillcolor="#65d84b" fontname=SimSun shape=record style=filled]
+	"0000.手工业":e -> "0028.棉甲":w [len=2.00]
+	}
+
+
+```
+
+
+## 战术打法
+
+中国的战术是依靠资源与科技优势，在战线上稳步推进。中国兵种造价相对低廉，预备役更大，生产速度更快，在火药科技研发后达到优势。
+中国缺少盾兵，骑兵也较弱，因此能否反制骑兵将成为对局的胜负手。
+中国拥有相对机动性更高的野战炮，但缺少攻城炮；攻城时只能以冲车作为主力，需要大量士兵进行掩护。
+
+## 兵种
+
+以下单位为<Highlight color="#4EC5F1"> 蓝色 </Highlight>的表示在**科技树完全研发**后拥有的兵种，为<Highlight color="#eb4c4c"> 红色 </Highlight>的表示为文明独有兵种。
+
+| <TableSpan width="80px">名称</TableSpan>                                        | 特点                                                                                           | 造价范围 | 文明战术定位                                   |
+|-------------------------------------------|----------------------------------------------------------------------------------------------|--------|--------------------------------------------|
+| 民兵                                        | 极低的攻击力与防御力                                                                           | 便宜     | 初期唯一战斗单位                               |
+| <Highlight color="#4EC5F1">刀剑手</Highlight>   | **替代民兵**，战斗力一般，白板步兵                                                               | 便宜     | 普通的近战单位，便宜，量大                       |
+| <Highlight color="#4EC5F1">长矛兵</Highlight>   | 较大的攻击范围，攻击时可降低敌人移速                                                            | 中等     | 阻挡推进，克制骑兵                              |
+| 弓箭手                                      | 远程攻击，白板弓弩系单位                                                                        | 中等     | 普通的远程攻击单位，中国的前期远程单位          |
+| <Highlight color="#4EC5F1">骑兵</Highlight>     | 高移速，较大攻击力，白板骑兵系单位                                                               | 中等     | 机动、推进                                      |
+| 火门枪手                                    | 高攻击力，稍近的攻击距离，训练速度快，射击间隔长                                                  | 中等     | 克制高防御单位，负责近远程破甲                  |
+| <Highlight color="#4EC5F1">火枪手</Highlight>   | **替代火门枪手**，高攻击力，训练速度快，射击间隔长，低防御力                                       | 稍贵     | 拉锯战，克制高防御单位，中国的中远程攻击单位     |
+| <Highlight color="#4EC5F1">冲车</Highlight>     | 近战攻城单位，高防御力，移速慢，对建筑有攻击加成，对士兵无攻击力                                   | 稍贵     | 建筑攻击单位，中国的主力攻城单位                |
+| <Highlight color="#eb4c4c">诸葛连弩</Highlight> | **替代弓箭手**，一次射击可发射3支箭矢，单箭攻击力稍低，攻击距离稍近                               | 中等     | 可在近远程火力覆盖，适合协同作战，但无法进行破甲 |
+| <Highlight color="#eb4c4c">虎蹲炮</Highlight>   | 机动性较高的炮兵单位，攻击可造成范围伤害，但对建筑伤害有限                                       | 昂贵     | 野战炮，不适合攻城                              |
+| <Highlight color="#eb4c4c">梨花枪兵</Highlight> | **替代长矛手**，初次攻击及往后每5次攻击可造成一次暴击，同时造成敌人后退                          | 便宜     | 拖延敌方推进，阻挡骑兵                          |
+| <Highlight color="#eb4c4c">三眼铳兵</Highlight> | **替代火门枪手**，一次射击可发射3发，攻击距离稍近，装弹时间长，但能进行近身战斗并造成少量近战伤害。 | 中等     | 可负责近远程破甲，对掩护的需求相对更低          |
+
+
+<details>
+  <summary>兵种解锁顺序</summary>
+  ```mermaid
+    flowchart TB
+        mb0[民兵]:::base --> djs0[刀剑手]:::target;
+        cmb0[长矛兵]--> lhqb0[梨花枪兵]:::target;
+        gjs0[弓箭手] --> zgln0[诸葛连弩]:::target;
+        hmqs0[火门枪手] --> hqs0[火枪手]:::target;
+        hmqs0 --> sycb0[三眼铳兵]:::target;
+        qb0[骑兵]:::target;
+        cc0[冲车]:::target;
+        hdp0[虎蹲炮]:::target;
+    classDef base fill:#d1d1d1, stroke:#707070;
+    classDef target fill:#fad866, stroke:#c16b1f;
+```
+    灰色表示初始单位，紫色表示需要进行科技研发才可获得的单位，橙色表示不可再升级单位。
+</details>
+
+## 独特效果
+
+* <Highlight color="#eb4c4c">万里长城</Highlight> 所有拒马+30%HP
+
+* <Highlight color="#4EC5F1">天朝大国</Highlight> 开局工人+1
+
+* <Highlight color="#4EC5F1">科举考试</Highlight> +2政策槽位
+* <Highlight color="#4EC5F1">宗庙制度</Highlight> 开局获得政策**宗族观念**
+* <Highlight color="#eb4c4c">厂卫制度</Highlight> 开局获得政策**厂卫制度**
+
+
+## 独特政策
+
+| 名称     | 效果                                          | 占用槽位 |
+|--------|---------------------------------------------|----------|
+| 海禁制度 | 所有拒马HP上限+50%，但科技发展速度-30%         | 3        |
+| 朝贡体系 | 所有占领的村庄每15秒生产2点黄金               | 4        |
+| 西学东渐 | 当敌方科技研发数量大于我方时，科技研发成本-30% | 3        |
+| 厂卫制度 | 敌方向我方已占领村庄施加的影响力-50%          | 3        |
+| 一条鞭法 | 工人生产力+100%，食物能提供其总量10%的生产力   | 4        |
