@@ -1,5 +1,14 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 
 .header {
     text-align: center;
   }
-  
+
+.imgIcon{
+
+    width: 20vh;
+
+    
+}
