@@ -1,0 +1,134 @@
+﻿{
+    "buildingsBuffs": [{
+            "id": "0000",
+            "coe": 1,
+            "buff": [
+                "MilInfantry",
+                "MilBow",
+                "MilCavalry",
+                "MilSiege",
+                "MilGunpowder"
+            ]
+        },
+        {
+            "id": "0001",
+            "coe": 1.5,
+            "buff": [
+                "MilInfantry",
+                "MilBow",
+                "MilCavalry",
+                "MilSiege"
+            ]
+        },
+        {
+            "id": "0002",
+            "coe": 3,
+            "buff": [
+                "EcoGold",
+                "EcoFood"
+            ]
+        },
+        {
+            "id": "0003",
+            "coe": 4,
+            "buff": [
+                "EcoFood"
+            ]
+        },
+        {
+            "id": "0004",
+            "coe": 5,
+            "buff": [
+                "EcoGold"
+            ]
+        },
+        {
+            "id": "0005",
+            "coe": 3,
+            "buff": [
+                "MilInfantry",
+                "MilInfantry",
+                "MilInfantry"
+            ]
+        },
+        {
+            "id": "0006",
+            "coe": 3,
+            "buff": [
+                "MilBow",
+                "MilBow",
+                "MilBow"
+            ]
+        },
+        {
+            "id": "0007",
+            "coe": 3.5,
+            "buff": [
+                "MilCavalry",
+                "MilCavalry",
+                "MilCavalry"
+            ]
+        },
+        {
+            "id": "0008",
+            "coe": 5,
+            "buff": [
+                "MilSiege",
+                "MilGunpowder",
+                "MilSiege",
+                "MilGunpowder",
+                "MilSiege",
+                "MilGunpowder"
+            ]
+        },
+        {
+            "id": "0009",
+            "coe": 3,
+            "buff": [
+                "EcoTech"
+            ]
+        },
+        {
+            "id": "0010",
+            "coe": 3,
+            "buff": [
+                "EcoFood",
+                "EcoGold"
+            ]
+        },
+        {
+            "id": "0011",
+            "coe": 1,
+            "buff": [
+                "MilDefence"
+            ]
+        },
+        {
+            "id": "0012",
+            "coe": 2,
+            "buff": [
+                "MilDefence"
+            ]
+        },
+        {
+            "id": "0014",
+            "coe": 5,
+            "buff": [
+                "EcoGold",
+                "EcoFood",
+                "MilInfantry",
+                "MilBow",
+                "MilCavalry",
+                "MilSiege",
+                "MilGunpowder"
+            ]
+        },
+        {
+            "id": "0015",
+            "coe": 2,
+            "buff": [
+                "MilDefence"
+            ]
+        }
+    ]
+}

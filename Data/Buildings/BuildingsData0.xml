@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+        <!ELEMENT root ANY>
+        <!ELEMENT Building (Name+,Content+)>
+            <!ATTLIST Building 
+                    BID ID #REQUIRED
+                    fileName CDATA #REQUIRED
+            >
+        <!ELEMENT Name (#PCDATA) >
+        <!ELEMENT Content (#PCDATA)>
+]>
+<!---->
+<!-- ID [0000]-->
+<!---->
+
+<root>
+    <Building  BID="b0000"  fileName="House Variant" >
+        <Name>
+            住房
+        </Name>
+        <Content>
+            提升工人人口数量和军事人口上限。
+        </Content>
+        <Upgrades>
+            <Upgrade name="WorkerPop">工人人口</Upgrade>
+            <Upgrade name="ArmyCap">军队上限</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0001"  fileName="BlacksmithShop Variant" >
+        <Name>
+            铁匠铺
+        </Name>
+        <Content>
+            为所有单位提供<![CDATA[<sprite name="ATK">]]>/<![CDATA[<sprite name="DEF">]]>加成。
+        </Content>
+        <Upgrades>
+            <Upgrade name="AttackPower">攻击力</Upgrade>
+            <Upgrade name="DefensePower">防御力</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0002"  fileName="Depot Variant" >
+        <Name>
+            仓库
+        </Name>
+        <Content>
+           工人可将采集到的<![CDATA[<sprite name="Food">]]>/<![CDATA[<sprite name="Gold">]]>就近运输至此。
+        </Content>
+        <Upgrades>
+            <Upgrade name="UnloadSpeed">卸货速度</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0003"  fileName="Farm Variant" >
+        <Name>
+            农场
+        </Name>
+        <Content>
+           可作为仓库使用，可根据经济<![CDATA[<sprite name="Pdct">]]>自动产出<![CDATA[<sprite name="Food">]]>。
+        </Content>
+        <Upgrades>
+            <Upgrade name="UnloadSpeed">卸货速度</Upgrade>
+            <Upgrade name="OutputTime">产出时间</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0004"  fileName="Mine Variant" >
+        <Name>
+            矿场
+        </Name>
+        <Content>
+           可作为仓库使用，可根据经济<![CDATA[<sprite name="Pdct">]]>自动产出<![CDATA[<sprite name="Gold">]]>。
+        </Content>
+        <Upgrades>
+            <Upgrade name="UnloadSpeed">卸货速度</Upgrade>
+            <Upgrade name="OutputTime">产出时间</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0005"  fileName="Barracks Variant" >
+        <Name>
+            兵营
+        </Name>
+        <Content>
+           为步兵系单位提供加成。可作为出兵点使用。
+        </Content>
+        <Upgrades>
+            <Upgrade name="Production">产能</Upgrade>
+            <Upgrade name="Quality">质量</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0006"  fileName="ShootingRange Variant" >
+        <Name>
+            靶场
+        </Name>
+        <Content>
+           为弓弩系单位提供加成。可作为出兵点使用。
+        </Content>
+        <Upgrades>
+            <Upgrade name="Production">产能</Upgrade>
+            <Upgrade name="Quality">质量</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0007"  fileName="Stable Variant" >
+        <Name>
+            马厩
+        </Name>
+        <Content>
+           为骑兵系单位提供加成。可作为出兵点使用。
+        </Content>
+        <Upgrades>
+            <Upgrade name="Production">产能</Upgrade>
+            <Upgrade name="Quality">质量</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0008"  fileName="Arsenal Variant" >
+        <Name>
+            兵工厂
+        </Name>
+        <Content>
+           为火药系与攻城武器系单位提供加成。可作为出兵点使用。
+        </Content>
+        <Upgrades>
+            <Upgrade name="Production">产能</Upgrade>
+            <Upgrade name="Quality">质量</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0009"  fileName="College Variant" >
+        <Name>
+            学院
+        </Name>
+        <Content>
+           为科技<![CDATA[<sprite name="Tech">]]>研发提供加速，并可根据当前<![CDATA[<sprite name="Pdct">]]>产生<![CDATA[<sprite name="ActionPoint">]]>。
+        </Content>
+        <Upgrades>
+            <Upgrade name="ResearchSpeed">研究速度</Upgrade>
+            <Upgrade name="AdminPoint">行政点产出</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0010"  fileName="Market Variant" >
+        <Name>
+            市场
+        </Name>
+        <Content>
+            减少<![CDATA[<sprite name="Food">]]>/<![CDATA[<sprite name="Gold">]]>互换损耗，为<![CDATA[<sprite name="Pdct">]]>提供加成。
+        </Content>
+        <Upgrades>
+            <Upgrade name="ExchangeLoss">交换损失</Upgrade>
+            <Upgrade name="Productivity">生产力</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0011"  fileName="Fence Variant" >
+        <Name>
+            栅栏
+        </Name>
+        <Content>
+            抵挡进攻。附近的本方单位<![CDATA[<sprite name="DEF">]]>+30%，<![CDATA[<sprite name="ATK">]]>+15%。
+        </Content>
+        <Upgrades>
+            <Upgrade name="Defense">防御</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0012"  fileName="GarrisonSpot Variant" >
+        <Name>
+            驻防点
+        </Name>
+        <Content>
+            弓弩系单位与火药系单位可以驻扎于此进行射击。附近的本方单位<![CDATA[<sprite name="DEF">]]>+15%，<![CDATA[<sprite name="ATK">]]>+15%。可作为出兵点使用。
+        </Content>
+        <Upgrades>
+            <Upgrade name="Defense">防御</Upgrade>
+            <Upgrade name="Attack">攻击</Upgrade>
+            <Upgrade name="Range">射程</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0014"  fileName="HagiaSophia Variant" >
+        <Name>
+            圣索菲亚大教堂
+        </Name>
+        <Content>
+            拜占庭奇观建筑。可自动生产<![CDATA[<sprite name="Gold">]]>、<![CDATA[<sprite name="Food">]]>，提供<![CDATA[<sprite name="Pdct">]]>加成、提高单位<![CDATA[<sprite name="ATK">]]>/<![CDATA[<sprite name="DEF">]]>。只能建造一个。
+        </Content>
+        <Upgrades>
+            <Upgrade name="Military">军事</Upgrade>
+            <Upgrade name="Economy">经济</Upgrade>
+            <Upgrade name="Religion">宗教</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0015"  fileName="StoneWall Variant" >
+        <Name>
+            石墙
+        </Name>
+        <Content>
+            更有效地抵挡进攻。附近的本方单位<![CDATA[<sprite name="DEF">]]>+30%，<![CDATA[<sprite name="ATK">]]>+15%。
+        </Content>
+        <Upgrades>
+            <Upgrade name="Defense">防御</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0016"  fileName="MongolianGer Variant" >
+        <Name>
+            蒙古包
+        </Name>
+        <Content>
+            少量提高军队人口上限，能缓慢生产<![CDATA[<sprite name="Food">]]>，升级后可作为【仓库】使用。
+        </Content>
+        <Upgrades>
+            <Upgrade name="WorkerPop">工人人口</Upgrade>
+            <Upgrade name="ArmyCap">军队上限</Upgrade>
+            <Upgrade name="AsDepot">可作为仓库</Upgrade>
+            <Upgrade name="FoodEfficiency">产粮效率</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0017"  fileName="WeilieChang Variant" >
+        <Name>
+            围猎场
+        </Name>
+        <Content>
+            为骑兵和弓骑兵提供增益。可作为出兵点使用。
+        </Content>
+        <Upgrades>
+            <Upgrade name="Production">产能</Upgrade>
+            <Upgrade name="Quality">质量</Upgrade>
+            <Upgrade name="Cost">造价</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0018"  fileName="Ovoo Variant" >
+        <Name>
+            敖包
+        </Name>
+        <Content>
+            建造后每击杀一个单位将获得一定的<![CDATA[<sprite name="Pdct">]]>。敖包被摧毁后，获得的<![CDATA[<sprite name="Pdct">]]>将消失。
+        </Content>
+        <Upgrades>
+            <Upgrade name="ProductivityBoost"><![CDATA[<sprite name="Pdct">]]>提升量</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0019"  fileName="Outpost Variant" >
+        <Name>
+            哨塔
+        </Name>
+        <Content>
+            能发射箭矢防御建筑。附近的本方单位<![CDATA[<sprite name="DEF">]]>+15%，<![CDATA[<sprite name="ATK">]]>+15%。
+        </Content>
+        <Upgrades>
+            <Upgrade name="Attack">攻击</Upgrade>
+            <Upgrade name="Defense">防御</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0020"  fileName="Bastille Variant" >
+        <Name>
+            要塞
+        </Name>
+        <Content>
+            拥有更强大防御火力的的防御建筑。附近的本方单位<![CDATA[<sprite name="DEF">]]>+15%，<![CDATA[<sprite name="ATK">]]>+15%。
+        </Content>
+        <Upgrades>
+            <Upgrade name="Attack">攻击</Upgrade>
+            <Upgrade name="ExtraTurret">加装炮塔</Upgrade>
+            <Upgrade name="FireOil">加装火油</Upgrade>
+            <Upgrade name="Defense">防御</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0021"  fileName="HouseDaming Variant" >
+        <Name>
+            住房
+        </Name>
+        <Content>
+            提升工人人口数量和军事人口上限。
+        </Content>
+        <Upgrades>
+            <Upgrade name="WorkerPop">工人人口</Upgrade>
+            <Upgrade name="ArmyCap">军队上限</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b0022"  fileName="TroopPoint Variant" >
+        <Name>
+            集结点
+        </Name>
+        <Content>
+            可作为出兵点使用。
+        </Content>
+        <Upgrades>
+            <Upgrade name="Dispatch">出兵</Upgrade>
+        </Upgrades>
+    </Building >
+    <Building  BID="b9999"  fileName="Tower" >
+        <Name>
+            基地
+        </Name>
+        <Content>
+            -
+        </Content>
+        <Upgrades>
+            <Upgrade name="Defense">防御</Upgrade>
+            <Upgrade name="Attack">攻击</Upgrade>
+            <Upgrade name="AttackRange">攻击距离</Upgrade>
+            <Upgrade name="GoldTax">黄金税收</Upgrade>
+        </Upgrades>
+    </Building >
+</root>

@@ -1,0 +1,792 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+        <!ELEMENT root ANY>
+        <!ELEMENT Tech (Name+,Content+)>
+            <!ATTLIST Tech 
+                    TID ID #REQUIRED
+            >
+        <!ELEMENT Name (#PCDATA) >
+        <!ELEMENT Content (#PCDATA)>
+]>
+<!---->
+<!-- ID [0000] 0:Normal 1:ECO 2:MIL 3:SPEC-->
+<!---->
+
+<root>
+    <Tech  TID="t0000"  >
+        <Name>
+            手工业
+        </Name>
+        <Content>
+            全体单位<![CDATA[<sprite name="ATK">]]>/<![CDATA[<sprite name="DEF">]]>+20%，并在此基础上+4。 
+解锁铁匠铺。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0001" >
+        <Name>
+            铸造
+        </Name>
+        <Content>
+            全体单位<![CDATA[<sprite name="ATK">]]>+20%，并在此基础上+6。
+提高攻击速度。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0002" >
+        <Name>
+            冶金
+        </Name>
+        <Content>
+            全体单位<![CDATA[<sprite name="ATK">]]>+25%，并在此基础上+8。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0003" >
+        <Name>
+            锁子甲
+        </Name>
+        <Content>
+            全体单位<![CDATA[<sprite name="DEF">]]>+20%，并在此基础上+6。
+全体单位<![CDATA[<sprite name="SPD">]]>+30%。
+全体单位<![CDATA[<sprite name="HP">]]>+25%。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0004" >
+        <Name>
+            板甲
+        </Name>
+        <Content>
+            全体单位<![CDATA[<sprite name="DEF">]]>+35%，并在此基础上+8。
+全体单位<![CDATA[<sprite name="HP">]]>+20%。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0005" >
+        <Name>
+            军事训练
+        </Name>
+        <Content>
+            解锁【刀剑手】、【盾兵】。
+同时无法再生产【民兵】。
+所有近战步兵单位<![CDATA[<sprite name="DEF">]]>+2。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0006" >
+        <Name>
+            战术
+        </Name>
+        <Content>
+            解锁【弓箭手】。
+所有单位最大<![CDATA[<sprite name="HP">]]>+10%。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0007" >
+        <Name>
+            常备军
+        </Name>
+        <Content>
+            近战步兵<![CDATA[<sprite name="ATK">]]>+10%，并在此基础上+1。
+提高步兵<![CDATA[<sprite name="DEF">]]>+10%，并在此基础上+3。
+解锁【兵营】。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0008" >
+        <Name>
+            马镫
+        </Name>
+        <Content>
+            解锁【骑兵】。
+所有士兵单位生产速度+10%。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0009" >
+        <Name>
+            复合弓
+        </Name>
+        <Content>
+            远程单位<![CDATA[<sprite name="ATK">]]>+2。
+远程单位的射击距离+20%。
+解锁【靶场】。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0010" >
+        <Name>
+            军事工程
+        </Name>
+        <Content>
+            解锁【要塞】。
+所有建筑的最大<![CDATA[<sprite name="HP">]]>+20%。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0011" >
+        <Name>
+            马匹育种
+        </Name>
+        <Content>
+            骑兵<![CDATA[<sprite name="SPD">]]>+10%。
+骑兵价格-10%。
+解锁【马厩】。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0012" >
+        <Name>
+            攻城器械
+        </Name>
+        <Content>
+            解锁【冲车】。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0013" >
+        <Name>
+            火药
+        </Name>
+        <Content>
+            解锁【火枪手】。
+所有单位对建筑的伤害提高25%。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0014" >
+        <Name>
+            军事技术
+        </Name>
+        <Content>
+            攻城器械生产速度+10%。
+攻城器械价格-15%。
+解锁【兵工厂】。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0015" >
+        <Name>
+            火炮
+        </Name>
+        <Content>
+            解锁【炮手】。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0016" >
+        <Name>
+            手推车
+        </Name>
+        <Content>
+            工人<![CDATA[<sprite name="SPD">]]>+20%。
+工人<![CDATA[<sprite name="HP">]]>+20%。
+工人<![CDATA[<sprite name="Gold">]]>运载量+2，<![CDATA[<sprite name="Food">]]>运载量+4。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0017" >
+        <Name>
+            水利
+        </Name>
+        <Content>
+            工人<![CDATA[<sprite name="Food">]]>采集量+4。
+工人<![CDATA[<sprite name="Food">]]>采集速度+30%。
+工人<![CDATA[<sprite name="HP">]]>+20%。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0018" >
+        <Name>
+            行政机构
+        </Name>
+        <Content>
+            工人人口<![CDATA[<sprite name="Pop">]]>上限+1。
+工人生产速度+100%。
+解锁【仓库】。
+政策槽位+2。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0019" >
+        <Name>
+            采矿
+        </Name>
+        <Content>
+            工人<![CDATA[<sprite name="Gold">]]>采集量+2。
+工人<![CDATA[<sprite name="Gold">]]>采集速度+20%。
+工人<![CDATA[<sprite name="HP">]]>+20%。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0020" >
+        <Name>
+            农学
+        </Name>
+        <Content>
+            工人<![CDATA[<sprite name="Food">]]>采集量+4。
+工人<![CDATA[<sprite name="Food">]]>采集速度+30%。
+解锁【农庄】。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0021" >
+        <Name>
+            教育
+        </Name>
+        <Content>
+            科技研发速度+25%。
+单位<![CDATA[<sprite name="Pdct">]]>+35%。
+工人人口<![CDATA[<sprite name="Pop">]]>上限+2。
+军事人口<![CDATA[<sprite name="Pop">]]>上限+4。
+解锁【学院】。
+政策槽位+3。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0022" >
+        <Name>
+            矿井勘探
+        </Name>
+        <Content>
+            工人<![CDATA[<sprite name="Gold">]]>采集量+3。
+工人<![CDATA[<sprite name="Gold">]]>采集速度+20%。
+工人<![CDATA[<sprite name="HP">]]>+20%。
+解锁【矿场】。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0023" >
+        <Name>
+            历法
+        </Name>
+        <Content>
+            工人<![CDATA[<sprite name="Food">]]>采集量+4。
+工人<![CDATA[<sprite name="Food">]]>采集速度+20%。
+工人<![CDATA[<sprite name="HP">]]>+20%。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0024" >
+        <Name>
+            经济
+        </Name>
+        <Content>
+            工人人口<![CDATA[<sprite name="Pop">]]>上限+3。
+军事人口<![CDATA[<sprite name="Pop">]]>上限+5。
+单位<![CDATA[<sprite name="Pdct">]]>+35%。
+<![CDATA[<sprite name="Food">]]>/<![CDATA[<sprite name="Gold">]]>互换损耗-30%。
+解锁【市场】。
+政策槽位+4。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0025" >
+        <Name>
+            化学
+        </Name>
+        <Content>
+            工人<![CDATA[<sprite name="Gold">]]>采集量+3。
+工人<![CDATA[<sprite name="Gold">]]>采集速度+20%。
+工人<![CDATA[<sprite name="HP">]]>+20%。
+        </Content>
+    </Tech >
+    <Tech  TID="t0026" >
+        <Name>
+            工程技术
+        </Name>
+        <Content>
+            建筑建造速度+35%。
+单位<![CDATA[<sprite name="Pdct">]]>+35%。
+工人人口<![CDATA[<sprite name="Pop">]]>上限+3。
+军事人口<![CDATA[<sprite name="Pop">]]>上限+5。
+        </Content>
+    </Tech >
+    
+    <Tech  TID="t0027" >
+        <Name>
+            交通运输
+        </Name>
+        <Content>
+            工人人口<![CDATA[<sprite name="Pop">]]>上限+3。
+军事人口<![CDATA[<sprite name="Pop">]]>上限+5。
+单位<![CDATA[<sprite name="Pdct">]]>+35%。
+        </Content>
+    </Tech >
+    <Tech  TID="t0028" >
+        <Name>
+            棉甲
+        </Name>
+        <Content>
+            全体单位<![CDATA[<sprite name="DEF">]]>+40%，并在此基础上+10.
+单位<![CDATA[<sprite name="SPD">]]>+40%。
+单位<![CDATA[<sprite name="HP">]]>+40%。 
+        </Content>
+    </Tech >
+    <Tech  TID="t0029" >
+        <Name>
+            火药
+        </Name>
+        <Content>
+            解锁【梨花枪兵】、【火门枪手】。
+同时无法再生产【长矛兵】。
+所有单位<![CDATA[<sprite name="ATK">]]>+2。
+        </Content>
+    </Tech >
+    <Tech  TID="t0030" >
+        <Name>
+            神机营
+        </Name>
+        <Content>
+            解锁【三眼铳兵】。
+同时无法再生产【火门枪手】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0031" >
+        <Name>
+            纪效新书
+        </Name>
+        <Content>
+            解锁【火枪手】。
+所有单位对建筑的伤害提高25%。
+        </Content>
+    </Tech >
+    <Tech  TID="t0032" >
+        <Name>
+            虎蹲炮
+        </Name>
+        <Content>
+            解锁【虎蹲炮】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0033" >
+        <Name>
+            诸葛连弩
+        </Name>
+        <Content>
+            解锁【诸葛连弩】。
+同时无法再生产【弓箭手】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0034" >
+        <Name>
+            农政全书
+        </Name>
+        <Content>
+            工人<![CDATA[<sprite name="Food">]]>采集量+6。
+采集<![CDATA[<sprite name="Food">]]>的工人全额提供<![CDATA[<sprite name="Pdct">]]>。
+        </Content>
+    </Tech >
+    <Tech  TID="t0035" >
+        <Name>
+            军事训练
+        </Name>
+        <Content>
+            解锁【刀剑手】、【长矛手】。
+同时无法再生产【民兵】。
+所有近战步兵单位<![CDATA[<sprite name="DEF">]]>+2。
+        </Content>
+    </Tech >
+    <Tech  TID="t0036" >
+        <Name>
+            天工开物
+        </Name>
+        <Content>
+            工人<![CDATA[<sprite name="SPD">]]>+30%。
+工人<![CDATA[<sprite name="Gold">]]>采集量+2。
+        </Content>
+    </Tech >
+    <Tech  TID="t0037" >
+        <Name>
+            资本主义萌芽
+        </Name>
+        <Content>
+            建筑建造速度+50%。
+总<![CDATA[<sprite name="Pdct">]]>+50%。
+工人人口<![CDATA[<sprite name="Pop">]]>上限+5。
+军事人口<![CDATA[<sprite name="Pop">]]>上限+5。
+单位生产速度+30%。
+        </Content>
+    </Tech >
+    <Tech  TID="t0038" >
+        <Name>
+            军事训练
+        </Name>
+        <Content>
+            解锁【盾牌手】、【长矛兵】。
+同时无法再生产【民兵】。
+所有近战步兵单位<![CDATA[<sprite name="DEF">]]>+2。
+        </Content>
+    </Tech >
+    <Tech  TID="t0039" >
+        <Name>
+            骑兵战术
+        </Name>
+        <Content>
+            解锁【轻骑兵】、【重骑兵】。
+同时无法再生产【骑兵】。
+骑兵系单位的<![CDATA[<sprite name="ATK">]]>+2，<![CDATA[<sprite name="DEF">]]>+2，<![CDATA[<sprite name="HP">]]>+50。
+        </Content>
+    </Tech >
+    <Tech  TID="t0040" >
+        <Name>
+            近卫兵团
+        </Name>
+        <Content>
+            解锁【法兰西近卫兵】。
+同时无法再生产【长矛兵】。
+立即获得6个免费的【法兰西近卫兵】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0041" >
+        <Name>
+            刺刀
+        </Name>
+        <Content>
+            解锁【刺刀火枪手】。
+同时无法再生产【火枪手】。
+立即获得5个【刺刀火枪手】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0042" >
+        <Name>
+            敕令骑兵连
+        </Name>
+        <Content>
+            解锁【敕令骑士】。
+同时无法再生产【重骑兵】。
+骑兵单位的生产速度+20%。
+        </Content>
+    </Tech >
+    <Tech  TID="t0043" >
+        <Name>
+            弹道学
+        </Name>
+        <Content>
+            火炮射程+20%。
+火炮<![CDATA[<sprite name="SPD">]]>+30%。
+        </Content>
+    </Tech >
+    <Tech  TID="t0044" >
+        <Name>
+            启蒙运动
+        </Name>
+        <Content>
+            工人人口<![CDATA[<sprite name="Pop">]]>上限+3。
+军事人口<![CDATA[<sprite name="Pop">]]>上限+6。
+总<![CDATA[<sprite name="Pdct">]]>+35%。
+单位生产速度+50%。
+政策槽位+5。
+        </Content>
+    </Tech >
+    <Tech  TID="t0045" >
+        <Name>
+            世界渴望之城
+        </Name>
+        <Content>
+            建筑建造速度+20%。
+总<![CDATA[<sprite name="Pdct">]]>+150%。
+税收<![CDATA[<sprite name="Tax">]]>效率+20%。
+工人人口<![CDATA[<sprite name="Pop">]]>上限+4。
+军事人口<![CDATA[<sprite name="Pop">]]>上限+6。
+政策槽位+4。
+解锁【圣索菲亚大教堂】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0046" >
+        <Name>
+            千夫队
+        </Name>
+        <Content>
+            步兵<![CDATA[<sprite name="ATK">]]>+10%，并在此基础上+2。
+步兵<![CDATA[<sprite name="DEF">]]>+10%，并在此基础上+2。
+解锁【兵营】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0047" >
+        <Name>
+            希腊火
+        </Name>
+        <Content>
+            解锁【希腊火喷射手】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0048" >
+        <Name>
+            陶罐希腊火
+        </Name>
+        <Content>
+            解锁【希腊火掷弹兵】。
+同时无法再生产【弓箭手】。
+希腊火单位的<![CDATA[<sprite name="ATK">]]>+3。
+        </Content>
+    </Tech >
+    <Tech  TID="t0049" >
+        <Name>
+            防御火力
+        </Name>
+        <Content>
+            解锁【驻防点】。
+远程单位<![CDATA[<sprite name="ATK">]]>+4。
+远程单位射击距离+25%。
+30秒内我方所有单位攻击速度+100%，<![CDATA[<sprite name="ATK">]]>+50%。
+        </Content>
+    </Tech >
+    <Tech  TID="t0050" >
+        <Name>
+            东正教
+        </Name>
+        <Content>
+            解锁【僧侣】。
+立刻获得2个免费的【僧侣】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0051" >
+        <Name>
+            牧首制
+        </Name>
+        <Content>
+            解锁【牧首】。
+同时无法再生产【僧侣】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0052" >
+        <Name>
+            骑枪
+        </Name>
+        <Content>
+            解锁【重骑兵】。
+同时无法再生产【骑兵】。
+立刻获得4个免费的【重骑兵】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0053" >
+        <Name>
+            重装战术
+        </Name>
+        <Content>
+            解锁【甲胄骑兵】。
+同时无法再生产【重骑兵】。
+立刻获得4个免费的【甲胄骑兵】。       
+        </Content>
+    </Tech > 
+    <Tech  TID="t0054" >
+        <Name>
+            狄奥多西城墙
+        </Name>
+        <Content>
+            建筑<![CDATA[<sprite name="DEF">]]>+5。
+建筑最大<![CDATA[<sprite name="HP">]]>+25%。
+解锁【石墙】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0055" >
+        <Name>
+            军事训练
+        </Name>
+        <Content>
+            解锁【刀剑手】、【盾兵】。
+同时无法再生产【民兵】。
+所有近战步兵单位<![CDATA[<sprite name="DEF">]]>+2。
+        </Content>
+    </Tech >
+    <Tech  TID="t0056" >
+        <Name>
+            课税所
+        </Name>
+        <Content>
+            工人人口<![CDATA[<sprite name="Pop">]]>上限+2。
+工人<![CDATA[<sprite name="Pdct">]]>+20%。
+科技研发速度+25%。
+政策槽位+3。
+每击杀一个单位可在一定时间内获得<![CDATA[<sprite name="Pdct">]]>加成。
+获得2苏鲁锭。
+        </Content>
+    </Tech >
+    <Tech  TID="t0057" >
+        <Name>
+            逐水草而居
+        </Name>
+        <Content>
+            工人<![CDATA[<sprite name="Food">]]>采集量+6。
+工人<![CDATA[<sprite name="Food">]]>采集速度+30%。
+【蒙古包】生产效率+20%。
+获得2苏鲁锭。
+        </Content>
+    </Tech >
+    <Tech  TID="t0058" >
+        <Name>
+            互市贸易
+        </Name>
+        <Content>
+            工人人口<![CDATA[<sprite name="Pop">]]>上限+3。
+军事人口<![CDATA[<sprite name="Pop">]]>上限+5。
+单位<![CDATA[<sprite name="Pdct">]]>+30%。
+<![CDATA[<sprite name="Food">]]>/<![CDATA[<sprite name="Gold">]]>兑换损耗-30%。
+获得5苏鲁锭。 
+政策槽位+4. 
+        </Content>
+    </Tech >
+    <Tech  TID="t0059" >
+        <Name>
+            成吉思汗碑
+        </Name>
+        <Content>
+            单位<![CDATA[<sprite name="Pdct">]]>+35%。
+工人人口<![CDATA[<sprite name="Pop">]]>上限+3。
+军事人口<![CDATA[<sprite name="Pop">]]>上限+5。
+建筑建造速度+35%。
+解锁【敖包】。
+获得10苏鲁锭。
+        </Content>
+    </Tech >
+    <Tech  TID="t0060" >
+        <Name>
+            蒙古西征
+        </Name>
+        <Content>
+            获得30苏鲁锭。
+工人人口<![CDATA[<sprite name="Pop">]]>上限+2。
+军事人口<![CDATA[<sprite name="Pop">]]>上限+4。
+总<![CDATA[<sprite name="Pdct">]]>+50%。  
+        </Content>
+    </Tech >
+    <Tech  TID="t0061" >
+        <Name>
+            哈喇和林
+        </Name>
+        <Content>
+            工人<![CDATA[<sprite name="Food">]]>采集量+10。
+工人<![CDATA[<sprite name="HP">]]>+20%。
+<![CDATA[<sprite name="Food">]]>采集速度+30%。
+【蒙古包】生产效率+20%。
+获得5苏鲁锭。
+        </Content>
+    </Tech >
+    <Tech  TID="t0062" >
+        <Name>
+            游牧军队
+        </Name>
+        <Content>
+            解锁【骑兵】。
+获得2苏鲁锭。
+        </Content>
+    </Tech >
+    <Tech  TID="t0063" >
+        <Name>
+            骑射手
+        </Name>
+        <Content>
+            解锁【弓骑兵】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0064" >
+        <Name>
+            宿卫制度
+        </Name>
+        <Content>
+            解锁【怯薛】。
+无法再生产【弓骑兵】。
+获得4苏鲁锭。
+        </Content>
+    </Tech >
+    <Tech  TID="t0065" >
+        <Name>
+            铁马金帐
+        </Name>
+        <Content>
+            解锁【拔突】。
+无法再生产【轻骑兵】。
+获得4苏鲁锭。
+        </Content>
+    </Tech >
+    <Tech  TID="t0066" >
+        <Name>
+            蒙古铁骑
+        </Name>
+        <Content>
+            解锁【达尔罕】。
+无法再生产【重骑兵】和【游牧骑兵】。
+获得4苏鲁锭。
+        </Content>
+    </Tech >
+    <Tech  TID="t0067" >
+        <Name>
+            围猎习俗
+        </Name>
+        <Content>
+            骑兵<![CDATA[<sprite name="ATK">]]>+5。
+骑兵补给<![CDATA[<sprite name="MainTain">]]>量-30%。
+解锁【围猎场】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0068" >
+        <Name>
+            九斿白纛
+        </Name>
+        <Content>
+            解锁【可汗】。
+获得2苏鲁锭。
+        </Content>
+    </Tech >
+    <Tech  TID="t0069" >
+        <Name>
+            火药
+        </Name>
+        <Content>
+            解锁【火门枪手】。
+所有单位对建筑的伤害提高25%。
+        </Content>
+    </Tech >
+    <Tech  TID="t0070" >
+        <Name>
+            蒙古攻城术
+        </Name>
+        <Content>
+            解锁【回回炮】。
+立即获得一个免费的【回回炮】。
+解锁【要塞】。
+        </Content>
+    </Tech >
+    <Tech  TID="t0071" >
+        <Name>
+            忽里勒台
+        </Name>
+        <Content>
+            解锁【蒙古大汗】。
+无法再生产【可汗】。
+获得5苏鲁锭。
+        </Content>
+    </Tech >
+    <Tech  TID="t0072" >
+        <Name>
+            放牧
+        </Name>
+        <Content>
+            工人<![CDATA[<sprite name="SPD">]]>+20%。
+解锁【蒙古包】。
+获得2苏鲁锭。
+        </Content>
+    </Tech >
+    <Tech  TID="t0073" >
+        <Name>
+            回马箭
+        </Name>
+        <Content>
+            弓骑兵系单位<![CDATA[<sprite name="ATK">]]>+8，<![CDATA[<sprite name="DEF">]]>+8。
+弓骑兵系单位可在移动时射击。
+        </Content>
+    </Tech >
+    <Tech  TID="t0074" >
+        <Name>
+            人口掳掠
+        </Name>
+        <Content>
+            解锁【签军】。
+        </Content>
+    </Tech >
+
+
+</root>

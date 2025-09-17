@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+        <!ELEMENT root ANY>
+        <!ELEMENT DaXueShi (Detail+)>
+            <!ATTLIST DaXueShi
+                    ID ID #REQUIRED
+                    Name CDATA #REQUIRED
+                    Avatar CDATA #REQUIRED
+                    Clique CDATA #REQUIRED
+                    Salary CDATA #REQUIRED
+                    HireCostActionPoint CDATA #REQUIRED
+            >
+        <!ELEMENT Detail (#PCDATA) >
+        ]>
+<root>
+    <DaXueShi ID="d0000" Name="张居正" Clique="2" Salary="100" HireCostActionPoint="100" Avatar="000" >
+        <Detail>
+            所有建筑可以提供15<![CDATA[<sprite name="Pdct">]]>与3税收<![CDATA[<sprite name="Tax">]]>，立刻获得政策【一条鞭法】。内阁中每有一个工商业主派系大学士，建筑将额外产生10点<![CDATA[<sprite name="Pdct">]]>和2点税收<![CDATA[<sprite name="Tax">]]>。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0001" Name="徐光启" Clique="2" Salary="100" HireCostActionPoint="100" Avatar="001" >
+        <Detail>
+            科技研发速度+25%，火药单位的<![CDATA[<sprite name="ATK">]]>+30%，精准度+30%，立刻获得政策【西学东渐】；可执行政令【征募夷兵】。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0002" Name="宋应星" Clique="2" Salary="100" HireCostActionPoint="80" Avatar="002" >
+        <Detail>
+            内阁中每有一个工商业主派系大学士，经济科技加速15%，经济建筑加速10%。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0003" Name="李贽" Clique="2" Salary="100" HireCostActionPoint="80" Avatar="003" >
+        <Detail>
+            降低20%的税收<![CDATA[<sprite name="Tax">]]>效率，但工人能提供额外的60%<![CDATA[<sprite name="Pdct">]]>。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0004" Name="杨士奇" Clique="0" Salary="100" HireCostActionPoint="100" Avatar="004" >
+        <Detail>
+            获取政策所需的<![CDATA[<sprite name="ActionPoint">]]>-50%，获取政策槽位所需的<![CDATA[<sprite name="ActionPoint">]]>-50%。可执行政令【设立主客部】。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0005" Name="李东阳" Clique="0" Salary="100" HireCostActionPoint="100" Avatar="005" >
+        <Detail>
+            学院每30秒能产出4倍于建筑等级的<![CDATA[<sprite name="ActionPoint">]]>和<![CDATA[<sprite name="Gold">]]>，内阁中每有一个士大夫派系的大学士，产出值+10%。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0006" Name="王守仁" Clique="0" Salary="100" HireCostActionPoint="80" Avatar="006" >
+        <Detail>
+            学院提供的加成效果+30%。内阁中每有一个军队派系大学士，所有士兵<![CDATA[<sprite name="HP">]]>+8%。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0007" Name="宋濂" Clique="0" Salary="100" HireCostActionPoint="80" Avatar="007" >
+        <Detail>
+            学院价格-60%，内阁中每有一个农民或士大夫派系大学士，<![CDATA[<sprite name="ActionPoint">]]>的获取效率+10%。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0008" Name="周延儒" Clique="0" Salary="100" HireCostActionPoint="80" Avatar="008" >
+        <Detail>
+            所有士兵移动速度-30%，但每30秒提供5倍于内阁中非军事派系大学士数量的<![CDATA[<sprite name="ActionPoint">]]>。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0009" Name="严嵩" Clique="1" Salary="100" HireCostActionPoint="100" Avatar="009" >
+        <Detail>
+            矿场的产出量+50%，税收<![CDATA[<sprite name="Tax">]]>-30%；当严嵩退出内阁时，玩家可获得n倍于损失的税收<![CDATA[<sprite name="Tax">]]>的<![CDATA[<sprite name="Gold">]]>，地主派系在内阁中占比越大、存在时间越长，n越大。可执行政令【朋党政治】。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0010" Name="徐阶" Clique="1" Salary="100" HireCostActionPoint="100" Avatar="010" >
+        <Detail>
+            农场的产出量+75%，同时立刻获得一个免费的满级农场(需要已解锁农场)；此后每有一个新的地主派系的官员进入内阁，都能获得一个免费的满级农场。可执行政令【朋党政治】。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0011" Name="申时行" Clique="1" Salary="100" HireCostActionPoint="80" Avatar="011" >
+        <Detail>
+            内阁大学士池刷新速度+30%，降低10%的行政<![CDATA[<sprite name="Pdct">]]>。内阁中每有一位地主或工商业主派系的大学士，池子刷新速度+8%。每有一位士大夫派系的大学士，池子刷新速度-5%。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0012" Name="沈一贯" Clique="1" Salary="100" HireCostActionPoint="80" Avatar="012" >
+        <Detail>
+            工人采集<![CDATA[<sprite name="Gold">]]>的效率-30%、采集<![CDATA[<sprite name="Food">]]>的效率+50%。内阁中每有一位士大夫派系的大学士，工人采集<![CDATA[<sprite name="Gold">]]>的效率+15%。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0013" Name="赵志皋" Clique="1" Salary="100" HireCostActionPoint="80" Avatar="013" >
+        <Detail>
+            士兵的补给量-30%，内阁中每有一位军事派系的大学士，士兵的补给量额外-15%。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0014" Name="戚继光" Clique="3" Salary="100" HireCostActionPoint="100" Avatar="014" >
+        <Detail>
+            每隔40秒获得一组【鸳鸯阵】中已解锁的兵种(2个三眼铳手，1个火枪手，3个梨花枪手，1个虎蹲炮)。内阁中每有一个军事派系的大学士，【鸳鸯阵】的产出效率+10%。可执行政令【组建戚家军】。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0015" Name="于谦" Clique="3" Salary="100" HireCostActionPoint="100" Avatar="015" >
+        <Detail>
+            本方所有士兵在本方半场<![CDATA[<sprite name="DEF">]]>+70%，哨塔和要塞的<![CDATA[<sprite name="ATK">]]>+40%。但内阁中每有一个士大夫派系大学士，士兵的补给量+10%。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0016" Name="孙传庭" Clique="3" Salary="100" HireCostActionPoint="80" Avatar="016" >
+        <Detail>
+            士兵训练速度-20%，但是<![CDATA[<sprite name="ATK">]]>+30%，<![CDATA[<sprite name="HP">]]>+20%。内阁中每有一个军事派系大学士，士兵<![CDATA[<sprite name="HP">]]>+5%。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0017" Name="袁崇焕" Clique="3" Salary="100" HireCostActionPoint="80" Avatar="017" >
+        <Detail>
+            火炮系单位<![CDATA[<sprite name="ATK">]]>+30%。内阁中每有一个军事派系大学士，火药系单位<![CDATA[<sprite name="ATK">]]>+5%。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0018" Name="李如松" Clique="3" Salary="100" HireCostActionPoint="80" Avatar="018" >
+        <Detail>
+            骑兵系单位<![CDATA[<sprite name="DEF">]]>+40%，<![CDATA[<sprite name="ATK">]]>+40%。内阁中每有一个军事派系大学士，骑兵系单位价格-5%。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0019" Name="秦良玉" Clique="3" Salary="100" HireCostActionPoint="80" Avatar="019" >
+        <Detail>
+            长矛兵系单位<![CDATA[<sprite name="ATK">]]>+50%。内阁中每有一个军事派系大学士，步兵系单位<![CDATA[<sprite name="DEF">]]>+10%。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0020" Name="周忱" Clique="4" Salary="100" HireCostActionPoint="100" Avatar="020" >
+        <Detail>
+            <![CDATA[<sprite name="Food">]]>/<![CDATA[<sprite name="Gold">]]>交换损耗-30%，工人采集效率+60%。内阁中每有一个农民派系的大学士，工人的<![CDATA[<sprite name="Food">]]>采集量+1。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0021" Name="张璁" Clique="4" Salary="100" HireCostActionPoint="100" Avatar="021" >
+        <Detail>
+            工人人口上限+4，税收<![CDATA[<sprite name="Tax">]]>效率+50%。可执行政令【大礼议】。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0022" Name="海瑞" Clique="4" Salary="100" HireCostActionPoint="80" Avatar="022" >
+        <Detail>
+            工人的采集速度和卸货速度+50%。每30秒会从内阁中的地主或士大夫派系大学士身上查抄出8点<![CDATA[<sprite name="Gold">]]>。内阁中每有一个农民派系的大学士，查抄出的<![CDATA[<sprite name="Gold">]]>+2。
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0023" Name="顾炎武" Clique="4" Salary="100" HireCostActionPoint="80" Avatar="023" >
+        <Detail>
+            场上工作的工人每隔30秒能提供2<![CDATA[<sprite name="ActionPoint">]]>。内阁中每有一个农民派系的大学士，提供的<![CDATA[<sprite name="ActionPoint">]]>+1.
+        </Detail>
+    </DaXueShi >
+    <DaXueShi ID="d0024" Name="黄宗羲" Clique="4" Salary="100" HireCostActionPoint="80" Avatar="024" >
+        <Detail>
+            场上工作的工人能提供50%的<![CDATA[<sprite name="Pdct">]]>。
+        </Detail>
+    </DaXueShi >
+    
+</root>

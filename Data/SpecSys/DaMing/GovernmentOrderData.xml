@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+        <!ELEMENT root ANY>
+        <!ELEMENT GovernmentOrder (Detail+)>
+        <!ATTLIST GovernmentOrder
+                ID ID #REQUIRED
+                Name CDATA #REQUIRED
+                Icon CDATA #REQUIRED
+                CostGold CDATA #REQUIRED
+                >
+        <!ELEMENT Detail (#PCDATA) >
+        ]>
+<root>
+    <GovernmentOrder ID="d0000" Name="万历新政" CostGold="80" Icon="000">
+        <Detail>
+            当内阁中有【张居正】，或内阁中【工商业主】和【地主】派系大学士各至少有两名时可执行。
+获得两个额外的内阁大学士槽位；但现有的农民派系内阁大学士将立刻退出内阁，且此后农民派系将不再刷新于官员池中。
+        </Detail>
+    </GovernmentOrder >
+    <GovernmentOrder ID="d0001" Name="征募夷兵" CostGold="70" Icon="001">
+        <Detail>
+            当内阁中有【徐光启】，或内阁中【工商业主】和【军队】派系大学士各至少有两名时可执行。
+用【炮手】替换【虎蹲炮】，【火枪手】的装填速度+20%；但所有单位的补给量+30%。
+        </Detail>
+    </GovernmentOrder >
+    <GovernmentOrder ID="d0002" Name="设立主客部" CostGold="70" Icon="002">
+        <Detail>
+            当内阁中有【杨士奇】，或内阁中【士大夫】派系大学士至少有三名时可执行。
+所有已占领的村庄将持续产出食物和黄金，持续占领的时间越长产出的效率越高；但村庄将不再提供额外的工人。
+        </Detail>
+    </GovernmentOrder >
+    <GovernmentOrder ID="d0003" Name="朋党政治" CostGold="50" Icon="003">
+        <Detail>
+            当内阁中有【严嵩】或【徐阶】，或内阁中各派系大学士各至少有一名时可执行。
+获取政策、政策槽位、黄金的<![CDATA[<sprite name="ActionPoint">]]>消耗-50%，但无法再获取税收<![CDATA[<sprite name="Tax">]]>。
+        </Detail>
+    </GovernmentOrder >
+    <GovernmentOrder ID="d0004" Name="组建戚家军" CostGold="80" Icon="004">
+        <Detail>
+            当内阁中有【戚继光】，或内阁中【军事】派系大学士至少有四名时可执行。
+所有单位的<![CDATA[<sprite name="ATK">]]>+30%，<![CDATA[<sprite name="DEF">]]>+30%，但生产速度-40%，补给消耗+40%。
+        </Detail>
+    </GovernmentOrder >
+    <GovernmentOrder ID="d0005" Name="大礼议" CostGold="30" Icon="005">
+        <Detail>
+            当内阁中有【张璁】，或内阁中【农民】派系大学士至少有三名时可执行。
+官员池刷新速度+50%，税收<![CDATA[<sprite name="Tax">]]>效率+50%，但失去两个内阁大学士槽位。
+        </Detail>
+    </GovernmentOrder >
+
+</root>

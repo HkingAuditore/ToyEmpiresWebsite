@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root" type="rootType">
+    <xs:annotation>
+      <xs:documentation> ID [0000] 0:Normal 1:ECO 2:MIL 3:SPEC</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="PolicyType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name"/>
+      <xs:element type="xs:string" name="Content"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="PID" use="optional"/>
+    <xs:attribute type="xs:string" name="Type" use="optional"/>
+    <xs:attribute type="xs:string" name="Occupancy" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="rootType">
+    <xs:sequence>
+      <xs:element type="PolicyType" name="Policy" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

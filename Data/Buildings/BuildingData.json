@@ -1,0 +1,163 @@
+{
+    "17": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 50.0,
+        "buildingCostTime": 30.0,
+        "maxHp": 1500.0
+    },
+    "14": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 470.0,
+        "buildingCostTime": 370.0,
+        "maxHp": 8000.0
+    },
+    "15": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 25.0,
+        "buildingCostTime": 20.0,
+        "maxHp": 4000.0
+    },
+    "5": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 60.0,
+        "buildingCostTime": 40.0,
+        "maxHp": 1500.0
+    },
+    "6": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 55.0,
+        "buildingCostTime": 40.0,
+        "maxHp": 1500.0
+    },
+    "0": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 30.0,
+        "buildingCostTime": 25.0,
+        "maxHp": 1200.0
+    },
+    "9999": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 0.0,
+        "buildingCostTime": 0.0,
+        "maxHp": 3000.0
+    },
+    "19": {
+        "buildingCostFood": 100.0,
+        "buildingCostWood": 100.0,
+        "buildingCostGold": 25.0,
+        "buildingCostTime": 20.0,
+        "maxHp": 2000.0
+    },
+    "7": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 80.0,
+        "buildingCostTime": 50.0,
+        "maxHp": 1500.0
+    },
+    "22": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 20.0,
+        "buildingCostTime": 20.0,
+        "maxHp": 0.0
+    },
+    "18": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 50.0,
+        "buildingCostTime": 35.0,
+        "maxHp": 1200.0
+    },
+    "16": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 15.0,
+        "buildingCostTime": 15.0,
+        "maxHp": 800.0
+    },
+    "10": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 80.0,
+        "buildingCostTime": 60.0,
+        "maxHp": 1500.0
+    },
+    "4": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 70.0,
+        "buildingCostTime": 45.0,
+        "maxHp": 1500.0
+    },
+    "3": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 60.0,
+        "buildingCostTime": 40.0,
+        "maxHp": 1500.0
+    },
+    "21": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 40.0,
+        "buildingCostTime": 25.0,
+        "maxHp": 1200.0
+    },
+    "2": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 30.0,
+        "buildingCostTime": 20.0,
+        "maxHp": 600.0
+    },
+    "9": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 70.0,
+        "buildingCostTime": 40.0,
+        "maxHp": 1500.0
+    },
+    "12": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 30.0,
+        "buildingCostTime": 30.0,
+        "maxHp": 3000.0
+    },
+    "1": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 30.0,
+        "buildingCostTime": 30.0,
+        "maxHp": 1300.0
+    },
+    "11": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 15.0,
+        "buildingCostTime": 15.0,
+        "maxHp": 3000.0
+    },
+    "8": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 100.0,
+        "buildingCostTime": 70.0,
+        "maxHp": 1500.0
+    },
+    "20": {
+        "buildingCostFood": 0.0,
+        "buildingCostWood": 0.0,
+        "buildingCostGold": 50.0,
+        "buildingCostTime": 30.0,
+        "maxHp": 4000.0
+    }
+}

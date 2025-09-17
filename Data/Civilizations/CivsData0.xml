@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+        <!ELEMENT root ANY>
+        <!ELEMENT Civilization (Name+,Content+,LevelTip*)>
+            <!ATTLIST Civilization
+                    CID ID #REQUIRED
+                    ParentCiv CDATA "-1"
+
+            >
+        <!ELEMENT Name (#PCDATA) >
+        <!ELEMENT Content (#PCDATA)>
+        <!ELEMENT LevelTip (#PCDATA)>
+            <!ATTLIST LevelTip
+                    Level CDATA #REQUIRED
+            >
+]>
+<!---->
+<!-- ID [000]-->
+<!---->
+
+<root>
+    <Civilization  CID="c000"  >
+        <Name>
+            白板势力
+        </Name>
+        <Content>
+            各项能力平庸的势力。
+生产力<![CDATA[<sprite name="Pdct">]]>+200%。
+抽取政策<![CDATA[<sprite name="Policy">]]>的行政点数<![CDATA[<sprite name="ActionPoint">]]>成本-50%。
+政策<![CDATA[<sprite name="Policy">]]>槽位+10。
+工人最大数量+7。
+    开局自带政策<![CDATA[<sprite name="Policy">]]>【什一税】、【徭役】。
+<![CDATA[<style="sub_title">[国家改革]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_1">]]><![CDATA[<b>]]>[王国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>军事改革<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>所有单位+5攻击力<![CDATA[<sprite name="ATK">]]>/防御力<![CDATA[<sprite name="DEF">]]>;30秒内+30%单位生产速度。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>经济改革<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>+3工人人口上限;生产力<![CDATA[<sprite name="Pdct">]]>+100。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>行政改革<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>+4政策<![CDATA[<sprite name="Policy">]]>槽位，每隔10秒提供5<![CDATA[<sprite name="ActionPoint">]]>;赠送2次免费的政策<![CDATA[<sprite name="Policy">]]>抽卡。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>文化改革<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>科技<![CDATA[<sprite name="Tech">]]>研发速度+15%;赠送1次免费的科技<![CDATA[<sprite name="Tech">]]>购买。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_2">]]><![CDATA[<b>]]>[帝国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>军事改革<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>+10军事人口上限;30秒内+20%单位攻击力<![CDATA[<sprite name="ATK">]]>/防御力<![CDATA[<sprite name="DEF">]]>。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>经济改革<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>+25%工人运载量;+20%<![CDATA[<sprite name="Pdct">]]>。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>行政改革<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>+8政策<![CDATA[<sprite name="Policy">]]>槽位，+30%建筑速度;赠送3次免费的政策<![CDATA[<sprite name="Policy">]]>抽卡。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>文化改革<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>研发的科技<![CDATA[<sprite name="Tech">]]>能提供15<![CDATA[<sprite name="Pdct">]]>;赠送1次免费的科技<![CDATA[<sprite name="Tech">]]>购买。<![CDATA[</style>]]>
+<![CDATA[</indent>]]><![CDATA[<br>]]>
+    </Content>
+        <LevelTip Level="0">推行一项改革以提高国家等级</LevelTip>
+        <LevelTip Level="1">推行一项改革以提高国家等级</LevelTip>
+    </Civilization>
+    <Civilization  CID="c001"  >
+        <Name>
+            大明
+        </Name>
+        <Content>
+            <![CDATA[<style="sub_title">[独特效果]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[万里长城]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>所有拒马生命值<![CDATA[<sprite name="HP">]]>+20%;\n哨塔和要塞的建造速度+100%，射程+20%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[天朝大国]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>开局工人+1，人口上限+7; \n单位生产速度+20%，预备役上限+25%; \n建造住房的收益翻倍。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[农本经济]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>工人的食物<![CDATA[<sprite name="Food">]]>采集量+3;\n食物<![CDATA[<sprite name="Food">]]>相关科技<![CDATA[<sprite name="Tech">]]>研究速度+30%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[科举考试]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>政策<![CDATA[<sprite name="Policy">]]>槽位+2;\n抽取政策<![CDATA[<sprite name="Policy">]]>的行政点数<![CDATA[<sprite name="ActionPoint">]]>成本-40%;\n抽取政策<![CDATA[<sprite name="Policy">]]>槽位的行政点数<![CDATA[<sprite name="ActionPoint">]]>成本-25%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[宗庙制度]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>开局获得政策<![CDATA[<sprite name="Policy">]]> 宗族观念。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[厂卫制度]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>开局获得政策<![CDATA[<sprite name="Policy">]]> 厂卫制度。<![CDATA[</style>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+<![CDATA[<style="sub_title">[独特兵种]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[梨花枪兵]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>替代长矛手，每5次攻击可造成一次暴击(四倍伤害)，同时造成大幅度击退。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[诸葛连弩]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>替代弓箭手，一次攻击可连续射击三次，单箭攻击力稍低，攻击距离稍近。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[三眼铳兵]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>替代火门枪手，每三次射击的间隔时间极短，射击精度较低，三次射击后装填时间长。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[虎蹲炮]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>机动性较高的炮兵单位，但攻击力和攻击距离稍低。<![CDATA[</style>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+
+            
+<![CDATA[<style="sub_title">[独特政策]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[海禁制度]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>所有拒马生命值<![CDATA[<sprite name="HP">]]>上限+100%，但税收<![CDATA[<sprite name="Tax">]]>效率-20%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[朝贡体系]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>所有占领的村庄每15秒生产3点黄金<![CDATA[<sprite name="Gold">]]>。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[西学东渐]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>当敌方科技<![CDATA[<sprite name="Tech">]]>研发数量大于我方时，科技<![CDATA[<sprite name="Tech">]]>研发成本-30%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[厂卫制度]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>敌方向我方已占领村庄施加的影响力-50%，我方占领的村庄能提供10生产力<![CDATA[<sprite name="Pdct">]]>，同时每10秒提供3行政点数<![CDATA[<sprite name="ActionPoint">]]>。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[一条鞭法]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>工人生产力<![CDATA[<sprite name="Pdct">]]>+100%，食物<![CDATA[<sprite name="Food">]]>能提供其总量10%的生产力<![CDATA[<sprite name="Pdct">]]>。<![CDATA[</style>]]><![CDATA[</indent>]]><![CDATA[<br>]]> 
+<![CDATA[<style="sub_title">[国家改革]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_1">]]><![CDATA[<b>]]>[王国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>建立卫所<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>所有单位攻击力<![CDATA[<sprite name="ATK">]]>/防御力<![CDATA[<sprite name="DEF">]]>+2，每个军事类建筑每秒产出食物<![CDATA[<sprite name="Food">]]>1。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>发行宝钞<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>升级后立刻获得黄金<![CDATA[<sprite name="Gold">]]>100。升级到王国的速度翻倍。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>设立内阁<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>+6政策<![CDATA[<sprite name="Policy">]]>槽位;赠送4次免费的政策<![CDATA[<sprite name="Policy">]]>抽卡。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>编修大典<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>所有王国科技<![CDATA[<sprite name="Tech">]]>研发时间-20%，每次研发科技<![CDATA[<sprite name="Tech">]]>返还20%的费用。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_2">]]><![CDATA[<b>]]>[帝国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>推行募兵制<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>所有单位+15%攻击力<![CDATA[<sprite name="ATK">]]>/防御力<![CDATA[<sprite name="DEF">]]>，生命值<![CDATA[<sprite name="HP">]]>+10%。立刻赠送5个免费的【梨花枪兵】和【刀剑手】。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>货币白银化<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>生产力<![CDATA[<sprite name="Pdct">]]>+15%，税收<![CDATA[<sprite name="Tax">]]>效率+20%;工人每次卸下资源时都会额外获得1点黄金<![CDATA[<sprite name="Gold">]]>。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>设立东西厂<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>+8政策<![CDATA[<sprite name="Policy">]]>槽位，建筑速度+25%，赠送4次免费的政策<![CDATA[<sprite name="Policy">]]>抽卡。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>朝贡贸易<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>所有帝国科技<![CDATA[<sprite name="Tech">]]>研发时间-30%，赠送一个免费的满级【市场】。<![CDATA[</style>]]>
+<![CDATA[</indent>]]><![CDATA[<br>]]>
+    </Content>
+        <LevelTip Level="0">推行一项改革以提高国家等级</LevelTip>
+        <LevelTip Level="1">推行一项改革以提高国家等级</LevelTip>
+    </Civilization>
+    <Civilization  CID="c002"  >
+        <Name>
+            法兰西
+        </Name>
+        <Content>
+            <![CDATA[<style="sub_title">[独特效果]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[朕即国家]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>抽取政策<![CDATA[<sprite name="Policy">]]>池由3个变为4个;\n行政点数<![CDATA[<sprite name="ActionPoint">]]>换取黄金<![CDATA[<sprite name="Gold">]]>的成本下降40%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[骑士精神]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>骑兵系士兵生命值<![CDATA[<sprite name="HP">]]>+40%，攻击力<![CDATA[<sprite name="ATK">]]>+30%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[三级会议]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>开局获得政策<![CDATA[<sprite name="Policy">]]> 三级会议。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[佣兵传统]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>每占领一个村庄，士兵生产速度+10%;\n开局获得政策<![CDATA[<sprite name="Policy">]]> 雇佣兵制。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[富农经济]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>采集黄金<![CDATA[<sprite name="Gold">]]>的工人速度<![CDATA[<sprite name="SPD">]]>+30%;\n经济建筑成本-30%;\n开局获得政策<![CDATA[<sprite name="Policy">]]> 重商主义。<![CDATA[</indent>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[独特兵种]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[法兰西近卫兵]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>替代长矛兵，攻击力更强、速度更快的长矛兵。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[刺刀火枪手]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>替代火枪手，同时具备近身战斗与远程战斗能力的火药单位。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[敕令骑士]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>替代重骑兵，速度稍快、攻击力防御力更高，具有更大的冲击力。<![CDATA[</style>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[独特政策]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[重商主义]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>无资源兑换损耗，但税收<![CDATA[<sprite name="Tax">]]>效率-20%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[炮兵改革]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>火炮的攻击力<![CDATA[<sprite name="ATK">]]>+5, 生产速度+100%, 移动速度<![CDATA[<sprite name="SPD">]]>+30%，造价+100%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[雇佣兵制]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>无需向士兵支付维护费，士兵攻击力<![CDATA[<sprite name="ATK">]]>防御力<![CDATA[<sprite name="DEF">]]>+3，但士兵造价+30%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[三级会议]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>当敌人士兵越过不少于两条路的中线时，我方工人采集黄金<![CDATA[<sprite name="Gold">]]>资源量+3，食物<![CDATA[<sprite name="Food">]]>资源量+6，税收<![CDATA[<sprite name="Tax">]]>效率+50%，生产力<![CDATA[<sprite name="Pdct">]]>+50%。<![CDATA[</style>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+<![CDATA[<style="sub_title">[国家改革]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_1">]]><![CDATA[<b>]]>[王国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>巴黎高等法院<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>+4政策<![CDATA[<sprite name="Policy">]]>槽位;赠送2次免费的政策<![CDATA[<sprite name="Policy">]]>抽卡;每次击杀获得的<![CDATA[<sprite name="ActionPoint">]]>+1。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>审计院<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>每次税收<![CDATA[<sprite name="Tax">]]>+3。工人的运载量+2。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>巴黎大学<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>科技<![CDATA[<sprite name="Tech">]]>研发速度+10%;赠送1次免费的科技<![CDATA[<sprite name="Tech">]]>购买。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>王家敕令骑兵<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]> 赠送5个【重骑兵】。解锁建筑【集结点】（能作为出兵点使用的建筑）。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_2">]]><![CDATA[<b>]]>[帝国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>绝对君主制<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>+8政策<![CDATA[<sprite name="Policy">]]>槽位，+15%建筑速度，行政点数<![CDATA[<sprite name="ActionPoint">]]>的获取效率+30%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>沃邦防御体系<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>赠送一个免费的【要塞】，要塞的建造速度+30%，在建筑附近的单位<![CDATA[<sprite name="DEF">]]>+5。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>殖民地贸易<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>资源兑换损耗归零，每个经济建筑能提供生产力<![CDATA[<sprite name="Pdct">]]>50。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>法国文艺复兴<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>根据当前已研发的科技<![CDATA[<sprite name="Tech">]]>，每个立刻赠送黄金<![CDATA[<sprite name="Gold">]]>30和生产力<![CDATA[<sprite name="Pdct">]]>15。<![CDATA[</style>]]>
+<![CDATA[</indent>]]><![CDATA[<br>]]>
+      </Content>
+        <LevelTip Level="0">成立一个国家机构以提高国家等级</LevelTip>
+        <LevelTip Level="1">推行一项改革以提高国家等级</LevelTip>
+    </Civilization >
+    <Civilization  CID="c003"  >
+        <Name>
+            拜占庭
+        </Name>
+        <Content>
+            <![CDATA[<style="sub_title">[独特效果]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[军区制度]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>军事建筑建造速度+30%，军事建筑价格-30%;\n开局时士兵、建筑的防御力<![CDATA[<sprite name="DEF">]]>+4。但每被摧毁一个拒马后，士兵和建筑的防御力<![CDATA[<sprite name="DEF">]]>-1，最多累计-6。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[正统权威]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>作用于行政的生产力<![CDATA[<sprite name="Pdct">]]>始终+25%;\n政策<![CDATA[<sprite name="Policy">]]>冷却速度+100%;\n我方单位向村庄施加影响力+25%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[贸易商路]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>税收<![CDATA[<sprite name="Tax">]]>效率+20%;\n工人生产力<![CDATA[<sprite name="Pdct">]]>+25%;\n开局获得政策<![CDATA[<sprite name="Policy">]]> 贸易控制。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[罗马军团]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>开局获得政策<![CDATA[<sprite name="Policy">]]> 军团战术、蛮族佣兵。<![CDATA[</indent>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[独特兵种]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[甲胄骑兵]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>替代重骑兵，防御力更高的重骑兵、移动速度稍低。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[瓦兰吉卫队]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>替代民兵或刀剑手，不消耗补给，攻击力更高，防御力稍低。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[希腊火喷射手]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>能持续喷出可在范围内造成持续性的火焰，射程短。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[希腊火掷弹兵]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>替代弓箭手，射程较短，能造成范围伤害，且落点能形成一段时间的火焰并对经过的敌方单位造成伤害。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[牧首]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>替代僧侣，无战斗能力，能恢复范围内所有士兵单位的生命值。<![CDATA[</style>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[独特政策]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[蛮族佣兵]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>用瓦兰吉卫队替换民兵或刀剑手，但其他单位的补给消耗速度+50%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[世袭兵役]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>生产单位的速度+100%，但生产力<![CDATA[<sprite name="Pdct">]]>-20%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[静修主义]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>僧侣和牧首的治疗效率+100%，但移动速度<![CDATA[<sprite name="SPD">]]>-20%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[贸易控制]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>税收<![CDATA[<sprite name="Tax">]]>+70%，但科技<![CDATA[<sprite name="Tech">]]>研发速度-15%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[宣称正统]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>若占领半数以上村庄，则生产力<![CDATA[<sprite name="Pdct">]]>+30%，士兵防御力<![CDATA[<sprite name="DEF">]]>+3；反之生产力<![CDATA[<sprite name="Pdct">]]>-30%，士兵攻击力<![CDATA[<sprite name="ATK">]]>-3。<![CDATA[</style>]]><![CDATA[</indent>]]> <![CDATA[<br>]]>
+<![CDATA[<style="sub_title">[国家改革]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_1">]]><![CDATA[<b>]]>[王国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>科穆宁体制<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>+2政策<![CDATA[<sprite name="Policy">]]>槽位，在王国时期每建成一个建筑后可获得1次免费的政策<![CDATA[<sprite name="Policy">]]>抽卡。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>普洛尼亚制<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>士兵的补给需求-20%(骑兵额外-30%);每建成一个建筑或完成一项建筑升级后可获得1个免费的重骑兵/甲胄骑兵。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>海培伦金币<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>立刻获得黄金<![CDATA[<sprite name="Gold">]]>100，+5税收<![CDATA[<sprite name="Tax">]]>;赠送一个满级的【矿场】。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>科穆宁文艺复兴<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>解锁【学院】;赠送1次免费的科技<![CDATA[<sprite name="Tech">]]>购买。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_2">]]><![CDATA[<b>]]>[帝国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>发动十字军<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>每个已解锁兵种各获得一支免费援军，数量等于该兵种的预备役上限。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>稳定贸易霸权<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>税收<![CDATA[<sprite name="Tax">]]>+10;赠送一个满级【市场】和两个满级【石墙】;但士兵生产速度-20%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>合并东西教会<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>+8政策<![CDATA[<sprite name="Policy">]]>槽位;【圣索菲亚大教堂】的建造速度+100%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>全能者修道院医院<![CDATA[</style>]]><![CDATA[<style="line_align_content_2">]]>宗教单位的治疗效率+200%、预备役+2，生产速度+100%。<![CDATA[</style>]]>
+<![CDATA[</indent>]]><![CDATA[<br>]]>
+       </Content>
+        <LevelTip Level="0">推行一项改革以提高国家等级</LevelTip>
+        <LevelTip Level="1">推行一项改革以提高国家等级</LevelTip>
+    </Civilization >
+    <Civilization  CID="c004"  >
+        <Name>
+            蒙古
+        </Name>
+        <Content>
+            <![CDATA[<style="sub_title">[独特效果]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[投下封邑]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>每占领一个村庄，骑兵预备役数量+1，骑兵生产速度+10%，骑兵补给量-10%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[千户制]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>骑兵提供的生产力<![CDATA[<sprite name="Pdct">]]>+10%;\n骑兵生产速度+10%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[游牧民族]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>拆毁建筑需要一定的时间，拆毁后可以免费建造一个同样的建筑（包括此前的建筑升级）。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[骑射传统]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>骑兵速度<![CDATA[<sprite name="SPD">]]>+20%、生命值<![CDATA[<sprite name="HP">]]>+20%;\n弓骑兵速度<![CDATA[<sprite name="SPD">]]>+10%、攻击力<![CDATA[<sprite name="ATK">]]>+10%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[掳掠]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>开局自带政策<![CDATA[<sprite name="Policy">]]>【扫荡】;\n抽取政策<![CDATA[<sprite name="Policy">]]>的行政点数<![CDATA[<sprite name="ActionPoint">]]>消耗+30%。<![CDATA[</indent>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[独特兵种]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[游牧骑兵]<![CDATA[</style>]]><![CDATA[<style="line_align_content_mid">]]>极为便宜的骑兵，战斗力较普通骑兵偏低。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[拔突]<![CDATA[</style>]]><![CDATA[<style="line_align_content_mid">]]>替代轻骑兵，速度更快，攻击更高的轻骑兵。如果在下次补给前击杀了单位，则下次补给时不消耗食物<![CDATA[<sprite name="Food">]]>。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[达尔罕]<![CDATA[</style>]]><![CDATA[<style="line_align_content_mid">]]>替代重骑兵，速度更快的重骑兵，擅长攻击建筑。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[怯薛]<![CDATA[</style>]]><![CDATA[<style="line_align_content_mid">]]>替代弓骑兵，怯薛会自动保持与当前射击对象的距离为射击距离。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[可汗]<![CDATA[</style>]]><![CDATA[<style="line_align_content_mid">]]>战斗机制与怯薛相同。同时为周围的本方单位提供攻击力与速度加成。一次只能派出一位。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[蒙古大汗]<![CDATA[</style>]]><![CDATA[<style="line_align_content_mid">]]>替代可汗，攻击力、生命值、作用范围更大的可汗。一次只能派出一位。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[签军]<![CDATA[</style>]]><![CDATA[<style="line_align_content_mid">]]>步兵单位，战斗力不高，但预备役数量更多、补给消耗更多。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[罗斯诸侯兵]<![CDATA[</style>]]><![CDATA[<style="line_align_content_mid">]]>替代签军，仅金帐汗国可生产，比签军稍强的步兵单位。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[回回炮]<![CDATA[</style>]]><![CDATA[<style="line_align_content_mid">]]>远程攻城单位。比火炮更便宜，训练时间更短，移动速度更快，但射击前摇时间更长。<![CDATA[</style>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[独特政策]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[达鲁花赤]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>可汗或蒙古大汗周围的单位能提供50%的生产力<![CDATA[<sprite name="Pdct">]]>。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[民族特权]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>税收<![CDATA[<sprite name="Tax">]]>效率+20%，工人-30%生产力<![CDATA[<sprite name="Pdct">]]>。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[羁縻统治]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>村庄能额外缓慢产出黄金<![CDATA[<sprite name="Gold">]]>，但施加影响力效率-30%。<![CDATA[</style>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[国家改革]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_1">]]><![CDATA[<b>]]>[王国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>千户制改革<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>单位生产速度+10%，蒙古包能提供的军事人口数量+2。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>颁布大扎撒<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>+4政策<![CDATA[<sprite name="Policy">]]>槽位，+5苏鲁锭，苏鲁锭购买项目的刷新速度+15%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>创制蒙文<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>苏鲁锭获取效率+20%，赠送1次免费的科技<![CDATA[<sprite name="Tech">]]>购买。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_2">]]><![CDATA[<b>]]>[帝国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>汉文化<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>+8政策<![CDATA[<sprite name="Policy">]]>槽位，解锁并赠送5个免费的【梨花枪兵】;赠送4次免费的政策<![CDATA[<sprite name="Policy">]]>抽卡。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>伊斯兰文化<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>苏鲁锭购买项目的刷新速度+30%;资源兑换损耗归零。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>喇嘛教文化<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>+15苏鲁锭;【可汗】与【蒙古大汗】对周围单位的加成量+50%。<![CDATA[</style>]]>
+<![CDATA[</indent>]]><![CDATA[<br>]]>
+            
+<![CDATA[<style="sub_title">[独特系统]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]>每击杀3个单位可以获得1个苏鲁锭，研究部分科技<![CDATA[<sprite name="Tech">]]>也会获得苏鲁锭，可以用于购买士兵或满级建筑。
+购买项目每28秒刷新一次，一次最多出现三个。
+花费苏鲁锭还可以用于成立【大元】【察合台汗国】【金帐汗国】【伊尔汗国】，一局游戏只能选择一个成立。不同的国家会有不同的升级选项。<![CDATA[<br>]]>
+大汗，您渊量圣姿，睿谋雄断，统一蒙古已经不足以彰显您的伟大了！让我的马再跑远点吧，向西边跑，向南边跑！我看到了腾格里在向我们招手！<![CDATA[</indent>]]>
+
+            </Content>
+        <LevelTip Level="0">推行一项改革以提高国家等级</LevelTip>
+        <LevelTip Level="1">接纳一种文化以提高国家等级</LevelTip>
+      </Civilization >
+    <Civilization  CID="c005"  ParentCiv = "1">
+        <Name>
+            大明-朋党朝廷
+        </Name>
+        <Content>
+
+            <![CDATA[<style="sub_title">[独特效果]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[万里长城]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>所有拒马生命值<![CDATA[<sprite name="HP">]]>+20%;\n哨塔和要塞的建造速度+100%，射程+20%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[天朝大国]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>开局工人+1，人口上限+7;\n单位生产速度+20%，预备役上限+25%;\n建造住房的收益+100%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[农本经济]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>工人的食物<![CDATA[<sprite name="Food">]]>采集量+3;\n食物<![CDATA[<sprite name="Food">]]>相关科技<![CDATA[<sprite name="Tech">]]>研究速度+30%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[知行合一]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>每研发一个科技<![CDATA[<sprite name="Tech">]]>都能获得相当于其购买价格10%的行政点数<![CDATA[<sprite name="ActionPoint">]]>。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[厂卫制度]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>开局获得政策<![CDATA[<sprite name="Policy">]]> 厂卫制度。<![CDATA[</indent>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[独特兵种]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[梨花枪兵]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>替代长矛手，每5次攻击可造成一次暴击(四倍伤害)，同时造成大幅度击退。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[三眼铳兵]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>替代火门枪手，每三次射击的间隔时间极短，射击精度较低，三次射击后装填时间长。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[虎蹲炮]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>机动性较高的炮兵单位，但攻击力和攻击距离稍低。<![CDATA[</style>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[独特政策]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[海禁制度]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>所有拒马生命值<![CDATA[<sprite name="HP">]]>上限+100%，但税收<![CDATA[<sprite name="Tax">]]>效率-20%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[朝贡体系]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>所有占领的村庄每15秒生产3点黄金<![CDATA[<sprite name="Gold">]]>。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[西学东渐]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>当敌方科技<![CDATA[<sprite name="Tech">]]>研发数量大于我方时，科技<![CDATA[<sprite name="Tech">]]>研发成本-30%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[厂卫制度]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>敌方向我方已占领村庄施加的影响力-50%，我方占领的村庄能提供10生产力<![CDATA[<sprite name="Pdct">]]>，同时每10秒提供3行政点数<![CDATA[<sprite name="ActionPoint">]]>。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[一条鞭法]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>工人生产力<![CDATA[<sprite name="Pdct">]]>+100%，食物<![CDATA[<sprite name="Food">]]>能提供其总量10%的生产力<![CDATA[<sprite name="Pdct">]]>。<![CDATA[</style>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+<![CDATA[<style="sub_title">[国家改革]</style>]]><![CDATA[<br>]]>
+            
+<![CDATA[<indent=3.5%>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_1">]]><![CDATA[<b>]]>[王国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>严党<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>立刻获得黄金<![CDATA[<sprite name="Gold">]]>100。内阁大学士槽位+2。升级到王国的速度+40%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>清流<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>立刻获得行政点数<![CDATA[<sprite name="ActionPoint">]]>100，官员的价格-30%。内阁大学士槽位+2。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_2">]]><![CDATA[<b>]]>[帝国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>东林党<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>立刻获得行政点数<![CDATA[<sprite name="ActionPoint">]]>200，官员的刷新速度+50%。内阁大学士槽位+2。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>阉党<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>立刻获得黄金<![CDATA[<sprite name="Gold">]]>250。内阁大学士槽位+2。升级到帝国的速度+30%。<![CDATA[</style>]]>
+<![CDATA[</indent>]]><![CDATA[<br>]]>
+<![CDATA[<style="sub_title">[独特系统]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]>可以通过消耗行政点数<![CDATA[<sprite name="ActionPoint">]]>在官员池中擢升【大学士】进入【内阁】。这些大学士属于不同的派系，能提供不同的加成效果。 
+每一位官员都有自己所在的派系，派系决定了官员将代表哪个利益集团的利益，官员提供的加成/政令于此有关。同一个派系的官员能提供的加成类似。 
+-【士大夫】：
+    提高行政相关，降低科技<![CDATA[<sprite name="Tech">]]>相关。
+-【地主】：
+    提高建筑相关，降低税收<![CDATA[<sprite name="Tax">]]>、科技<![CDATA[<sprite name="Tech">]]>相关。
+-【工商业主】：
+    提高科技<![CDATA[<sprite name="Tech">]]>相关，降低税收<![CDATA[<sprite name="Tax">]]>、行政相关。
+-【军队】：
+    提高军事相关，降低经济相关。
+-【农民】：
+    提供经济相关，降低军事相关。
+内阁只能容纳一定数量的大学士，但您还可以消耗行政点数<![CDATA[<sprite name="ActionPoint">]]>升级您的内阁容量。内阁中出于主导力量的派系会提供额外的加成效果。
+当满足某些特定条件时，您可以花费一定的黄金<![CDATA[<sprite name="Gold">]]>执行政令，它将为您提供永久的强力加成效果。<![CDATA[<br>]]>
+
+陛下雄武之略，同符高祖，六师屡出，漠北尘清，乃至四海平宁，外邦皆服。而今入朝堂之内，当裁决诸政，教育德化。使吏称其职，政得其平。望陛下笃任贤能，审慎制衡，弘恤民之政，察忠奸之分，使我大明威德遐被，四方宾服，远迈汉唐！<![CDATA[</indent>]]>
+    </Content>
+        <LevelTip Level="0">支持一个派系以提升国家等级</LevelTip>
+        <LevelTip Level="1">支持一个派系以提升国家等级</LevelTip>
+  </Civilization>
+    <Civilization  CID="c006"  ParentCiv = "2">
+        <Name>
+            法兰西-朕即国家
+        </Name>
+        <Content>
+            <![CDATA[<style="sub_title">[独特效果]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[朕即国家]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>抽取政策<![CDATA[<sprite name="Policy">]]>池由3个变为4个。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[骑士精神]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>骑兵系士兵生命值<![CDATA[<sprite name="HP">]]>+30%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[佣兵传统]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>开局获得政策<![CDATA[<sprite name="Policy">]]> 雇佣兵制。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[重商主义]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>经济建筑成本-10%;\n开局获得政策<![CDATA[<sprite name="Policy">]]> 重商主义。<![CDATA[</indent>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[独特兵种]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[法兰西近卫兵]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>替代长矛兵，攻击力更强、速度更快的长矛兵。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[刺刀火枪手]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>替代火枪手，同时具备近身战斗与远程战斗能力的火药单位。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[敕令骑士]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>替代重骑兵，速度稍快、攻击力防御力更高，具有更大的冲击力。<![CDATA[</style>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+            
+<![CDATA[<style="sub_title">[独特政策]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[重商主义]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>无资源兑换损耗，但税收<![CDATA[<sprite name="Tax">]]>效率-20%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[炮兵改革]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>火炮的攻击力<![CDATA[<sprite name="ATK">]]>+20%, 生产速度+100%, 移动速度<![CDATA[<sprite name="SPD">]]>+30%，造价+100%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[雇佣兵制]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>无需向士兵支付维护费，士兵攻击力<![CDATA[<sprite name="ATK">]]>防御力<![CDATA[<sprite name="DEF">]]>+3，但士兵造价+30%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[三级会议]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>当敌人士兵越过不少于两条路的中线时，我方工人采集黄金<![CDATA[<sprite name="Gold">]]>资源量+3，食物<![CDATA[<sprite name="Food">]]>资源量+6，税收<![CDATA[<sprite name="Tax">]]>效率+50%，生产力<![CDATA[<sprite name="Pdct">]]>+50%。<![CDATA[</style>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[国家改革]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_1">]]><![CDATA[<b>]]>[王国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>圣女贞德<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>平民阶层+6忠诚度，同时立刻获得4个免费的【骑兵】和【长矛手】。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>克莱孟五世<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>教士阶层+6忠诚度，此后每两次收税<![CDATA[<sprite name="Tax">]]>就能获得国王权威<![CDATA[<sprite name="GWQW">]]>1点。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_2">]]><![CDATA[<b>]]>[帝国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>阿马尼亚克派<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>贵族阶层+6忠诚度，解锁建筑【集结点】(能作为出兵点使用的建筑)，同时立刻获得黄金<![CDATA[<sprite name="Gold">]]>80和食物<![CDATA[<sprite name="Food">]]>100。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>黎塞留<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>国王权威<![CDATA[<sprite name="GWQW">]]>上限+5，同时立刻获得国王权威<![CDATA[<sprite name="GWQW">]]>5;开会后带来的临时加成效果延长30%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>沃邦<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>赠送一个免费的【要塞】，要塞的建造速度+30%，在建筑附近的单位防御力<![CDATA[<sprite name="DEF">]]>+5。<![CDATA[</style>]]>
+<![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[独特系统]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]>您可以可以通过消耗行政点数<![CDATA[<sprite name="ActionPoint">]]>每隔一段时间召开一次【三级会议】。三级会议中有三个阶层：教士、贵族、平民。不同的阶层将会带来不同的效果：
+- 教士：影响行政点数<![CDATA[<sprite name="ActionPoint">]]>的获取效率、税收<![CDATA[<sprite name="Tax">]]>效率。
+- 贵族：影响单位生产效率、科技<![CDATA[<sprite name="Tech">]]>研发效率。
+- 平民：影响建筑建造/升级/维修效率、资源采集效率。
+在两次三级会议召开期间，根据玩家击杀的敌军数量、获取的资源数量、将获得一定的【国王权威】点数，国王权威不可累积，在会议结束后即清零。
+根据您对这些派系的关系，他们将对您有不同的反应，如果您对他们足够好，他们会永远效忠于您；反之，他们也会与我们为敌。<![CDATA[<br>]]>
+            
+托上帝洪恩，法兰西与纳瓦尔最笃信基督的国王殿下！最公正仁厚、宽大严明、如太阳般的国王殿下！自查理曼来八百年，法兰西有哪位君主能够与您相比？又有哪位君主能如您一般在法国的大地上拥有如此说一不二的权威？好好对待您的子民们吧！除了公敌之外，我们可没有敌人！<![CDATA[</indent>]]>
+
+        </Content>
+        <LevelTip Level="0">选择一个合作伙伴以提高国家等级</LevelTip>
+        <LevelTip Level="1">选择一个合作伙伴以提高国家等级</LevelTip>
+      </Civilization >
+    <Civilization  CID="c007"  ParentCiv = "3">
+        <Name>
+            拜占庭-紫鹰浴火
+        </Name>
+        <Content>
+            <![CDATA[<style="sub_title">[独特效果]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[正统权威]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>作用于行政的生产力<![CDATA[<sprite name="Pdct">]]>始终+25%;\n政策<![CDATA[<sprite name="Policy">]]>冷却速度+100%;\n我方单位向村庄施加影响力+25%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[贸易商路]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>税收<![CDATA[<sprite name="Tax">]]>效率+20%;\n工人生产力<![CDATA[<sprite name="Pdct">]]>+25%;\n开局获得政策<![CDATA[<sprite name="Policy">]]> 贸易控制。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[蛮族佣兵]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>开局获得政策<![CDATA[<sprite name="Policy">]]> 蛮族佣兵。<![CDATA[</indent>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[独特兵种]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[甲胄骑兵]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>替代重骑兵，防御力更高的重骑兵、移动速度稍低。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[瓦兰吉卫队]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>替代民兵或刀剑手，不消耗补给，攻击力更高，防御力稍低。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[希腊火喷射手]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>能持续喷出可在范围内造成持续性的火焰，射程短。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[牧首]<![CDATA[</style>]]><![CDATA[<style="line_align_content_huge">]]>替代僧侣，无战斗能力，能恢复范围内所有士兵单位的生命值。<![CDATA[</style>]]><![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[独特政策]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]><![CDATA[<style="line_title">]]>[蛮族佣兵]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>用瓦兰吉卫队替换民兵或刀剑手，但其他单位的补给消耗速度+50%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[世袭兵役]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>生产单位的速度+100%，但生产力<![CDATA[<sprite name="Pdct">]]>-20%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[静修主义]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>僧侣和牧首的治疗效率+100%，但移动速度<![CDATA[<sprite name="SPD">]]>-20%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[贸易控制]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>税收<![CDATA[<sprite name="Tax">]]>+70%，但科技<![CDATA[<sprite name="Tech">]]>研发速度-15%。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>[宣称正统]<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>若占领半数以上村庄，则生产力<![CDATA[<sprite name="Pdct">]]>+30%，士兵防御力<![CDATA[<sprite name="DEF">]]>+30%；反之生产力<![CDATA[<sprite name="Pdct">]]>-30%，士兵攻击力<![CDATA[<sprite name="ATK">]]>-30%。<![CDATA[</style>]]><![CDATA[</indent>]]> <![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[国家改革]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_1">]]><![CDATA[<b>]]>[王国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>波兰<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>每个已解锁兵种各获得一支人数为5的援军。所有拒马的防御力<![CDATA[<sprite name="DEF">]]>+5。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>热那亚<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>帝国声望+2，经济科技<![CDATA[<sprite name="Tech">]]>的研发速度+20%。此后每获得一点帝国声望都能立刻获得黄金<![CDATA[<sprite name="Gold">]]>15。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]><![CDATA[<sprite name="NL_2">]]><![CDATA[<b>]]>[帝国]<![CDATA[</b>]]><![CDATA[</style>]]><![CDATA[<style="line_align_content">]]><![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>教皇国<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>帝国声望+8，此前花费帝国声望购买的项目可以再次购买。<![CDATA[</style>]]>
+<![CDATA[<style="line_title">]]>神圣罗马帝国<![CDATA[</style>]]><![CDATA[<style="line_align_content">]]>帝国声望+8，赠送1次免费的科技<![CDATA[<sprite name="Tech">]]>购买;此后每获得一点帝国声望都能得到生产力<![CDATA[<sprite name="Pdct">]]>20点。<![CDATA[</style>]]>
+<![CDATA[</indent>]]><![CDATA[<br>]]>
+
+<![CDATA[<style="sub_title">[独特系统]</style>]]><![CDATA[<br>]]>
+<![CDATA[<indent=3.5%>]]>通过达成一系列战争或建设目标，您可以获得大量的【帝国声望】。不同的【帝国声望】将决定帝国的等级，而不同的等级将会提供不同的加成效果。
+此外，您还可以花费一定数量的帝国声望来购买额外的一次性加成效果。<![CDATA[<br>]]>
+
+尊敬的巴西琉斯，帝国屈居于君士坦丁堡已经太久了，我们怎能忍受日耳曼人狂妄地窃取罗马的名号，怎能忍受拉丁人在我们头上作威作福，怎能忍受突厥人在城外虎视眈眈？不，我们不会屈服！上帝不允许我在没有帝国的情况下生活。当我的城市沦陷时，我也会随之倒下。谁想逃，就让他自己去吧，谁准备面对死亡，就请他随我一起！我们的帝国将涅槃重生，再续千年！<![CDATA[</indent>]]><![CDATA[<br>]]>
+            
+        </Content>
+        <LevelTip Level="0">选择一个盟友以提高国家等级</LevelTip>
+        <LevelTip Level="1">选择一个盟友以提高国家等级</LevelTip>
+        </Civilization >
+</root>

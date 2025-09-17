@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+        <!ELEMENT root ANY>
+        <!ELEMENT Clique (Detail+)>
+            <!ATTLIST Clique
+                    ID ID #REQUIRED
+                    Name CDATA #REQUIRED
+                    Icon CDATA #REQUIRED
+            >
+        <!ELEMENT Detail (#PCDATA) >
+        ]>
+<root>
+    <Clique ID="c0000" Name="士大夫" Icon="0" >
+        <Detail>
+            当士大夫派系占内阁三分之二多数时，行政<![CDATA[<sprite name="Pdct">]]>+65%，获取<![CDATA[<sprite name="ActionPoint">]]>的效率+150%，科研<![CDATA[<sprite name="Tech">]]>速度-50%。
+        </Detail>
+    </Clique >
+    <Clique ID="c0001" Name="地主" Icon="1" >
+        <Detail>
+            当地主派系占内阁三分之二多数时，建筑建造和升级速度+150%，建造和升级成本-40%，税收<![CDATA[<sprite name="Tax">]]>-40%，科研<![CDATA[<sprite name="Tech">]]>速度-50%。
+        </Detail>
+    </Clique >
+    <Clique ID="c0002" Name="工商业主" Icon="2" >
+        <Detail>
+            当工商业主派系占内阁三分之二多数时，科研<![CDATA[<sprite name="Tech">]]>速度+200%，税收<![CDATA[<sprite name="Tax">]]>-50%，行政<![CDATA[<sprite name="Pdct">]]>-40%。
+        </Detail>
+    </Clique >
+    <Clique ID="c0003" Name="军队" Icon="3" >
+        <Detail>
+            当军队派系占内阁三分之二多数时，单位<![CDATA[<sprite name="ATK">]]>/<![CDATA[<sprite name="DEF">]]>+70%，经济<![CDATA[<sprite name="Pdct">]]>-30%，工人<![CDATA[<sprite name="SPD">]]>和工作速度-30%。
+        </Detail>
+    </Clique >
+    <Clique ID="c0004" Name="农民" Icon="4" >
+        <Detail>
+            当农民派系占内阁三分之二多数时，工人<![CDATA[<sprite name="SPD">]]>和工作速度+80%，士兵生产速度-40%。
+        </Detail>
+    </Clique >
+    
+</root>

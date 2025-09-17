@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+        <!ELEMENT root ANY>
+        <!ELEMENT Item ANY>
+            <!ATTLIST Item
+                    ID ID #REQUIRED
+                    Name CDATA #REQUIRED
+                    Cost CDATA #REQUIRED
+                    Icon CDATA #REQUIRED
+            >
+            <!ELEMENT Detail (#PCDATA) >
+        ]>
+<root>
+    <Item ID="i0000" Name="钱箱" Icon="000" Cost="1">
+        立刻获得50<![CDATA[<sprite name="Gold">]]>。
+    </Item >
+    <Item ID="i0001" Name="威尼斯商人" Icon="001" Cost="1">
+        立刻获得100<![CDATA[<sprite name="Pdct">]]>。
+    </Item >
+    <Item ID="i0002" Name="盾兵团" Icon="002" Cost="2">
+        立刻获得5个免费的盾兵(需要已解锁)。
+    </Item >
+    <Item ID="i0003" Name="瓦兰吉卫队团" Icon="003" Cost="2">
+        立刻获得5个免费的瓦兰吉卫队(需要已解锁)。
+    </Item >
+    <Item ID="i0004" Name="希腊火喷射手团" Icon="004" Cost="4">
+        立刻获得3个免费的希腊火喷射手(需要已解锁)。
+    </Item >
+    <Item ID="i0005" Name="大马士革钢" Icon="005" Cost="5">
+        +4所有单位<![CDATA[<sprite name="ATK">]]>。
+    </Item >
+    <Item ID="i0006" Name="意大利板甲" Icon="006" Cost="5">
+        +4所有单位<![CDATA[<sprite name="DEF">]]>。
+    </Item >
+    <Item ID="i0007" Name="朱斯蒂尼亚尼的军医" Icon="007" Cost="6">
+        立刻回复所有单位200生命值，同时为所有场上单位+4<![CDATA[<sprite name="ATK">]]>，+4<![CDATA[<sprite name="DEF">]]>。
+    </Item >
+    <Item ID="i0008" Name="大钱箱" Icon="008" Cost="2">
+        立刻获得120<![CDATA[<sprite name="Gold">]]>。
+    </Item >
+    <Item ID="i0009" Name="宫廷仪式" Icon="009" Cost="4">
+        立刻获得100<![CDATA[<sprite name="ActionPoint">]]>。
+    </Item >
+    <Item ID="i0010" Name="意大利工匠" Icon="010" Cost="5">
+        立刻获得一个免费的满级铁匠铺(需要已解锁)。
+    </Item >
+    <Item ID="i0011" Name="闪电般归来" Icon="011" Cost="15">
+        所有单位<![CDATA[<sprite name="ATK">]]>+50%，<![CDATA[<sprite name="DEF">]]>+50%，单位生产速度+50%，持续40秒。
+    </Item >
+    <Item ID="i0012" Name="甲胄骑兵团" Icon="012" Cost="4">
+        立刻获得4个免费的甲胄骑兵(需要已解锁)。
+    </Item >
+    <Item ID="i0013" Name="圣体圣事" Icon="013" Cost="5">
+        所有单位生命值上限+50。
+    </Item >
+    <Item ID="i0014" Name="军事贵族效忠" Icon="014" Cost="6">
+        立刻获得一个免费的满级兵营(需要已解锁)。
+    </Item >
+    <Item ID="i0015" Name="医院骑士团支援" Icon="015" Cost="8">
+        立刻获得一个免费的满级马厩(需要已解锁)。
+    </Item >
+    <Item ID="i0016" Name="威尼斯军械库支援" Icon="016" Cost="8">
+        立刻获得一个免费的满级兵工厂(需要已解锁)。
+    </Item >
+    <Item ID="i0017" Name="乌尔班的请求" Icon="017" Cost="10">
+        若已经研发了科技【防御火力】，可解锁【炮手】。
+    </Item >
+    <Item ID="i0018" Name="热那亚援军" Icon="018" Cost="5">
+        单位生产速度+30%，持续40秒。
+    </Item >
+    <Item ID="i0019" Name="抢修工事" Icon="019" Cost="5">
+        建筑速度+30%，持续60秒。
+    </Item >
+    <Item ID="i0020" Name="整理希腊典籍" Icon="020" Cost="5">
+        科研速度+30%，持续50秒。
+    </Item >
+    <Item ID="i0021" Name="封锁科克波塔门" Icon="021" Cost="4">
+        立刻获得两个瞬间建造的免费满级石墙(需要已解锁)。
+    </Item >
+
+    
+</root>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+        <!ELEMENT root (Civilization+)>
+        <!ELEMENT Civilization (Level+)>
+        <!ATTLIST Civilization
+                CID ID #REQUIRED
+                >
+        <!ELEMENT Level (Name+,Content+) >
+            <!ATTLIST Level
+                    LID ID #REQUIRED
+                    >
+        <!ELEMENT Name (#PCDATA) >
+        <!ELEMENT Content (#PCDATA)>
+]>
+<root>
+    <Civilization CID="c000" >
+        <Level LID="l000000">
+            <Name>军事改革</Name>
+            <Content>所有单位<![CDATA[<sprite name="ATK">]]>/<![CDATA[<sprite name="DEF">]]>+5;30秒内+30%单位生产速度。</Content>
+        </Level>
+        <Level LID="l000001">
+            <Name>经济改革</Name>
+            <Content>+3工人人口<![CDATA[<sprite name="Pop">]]>上限;+100<![CDATA[<sprite name="Pdct">]]>。</Content>
+        </Level>
+        <Level LID="l000002">
+            <Name>行政改革</Name>
+            <Content>+4政策<![CDATA[<sprite name="Policy">]]>槽位，每隔10秒提供5<![CDATA[<sprite name="ActionPoint">]]>;赠送2次免费的政策<![CDATA[<sprite name="Policy">]]>抽卡。</Content>
+        </Level>
+        <Level LID="l000003">
+            <Name>文化改革</Name>
+            <Content>科技<![CDATA[<sprite name="Tech">]]>研发速度+15%;赠送1次免费的科技<![CDATA[<sprite name="Tech">]]>购买。</Content>
+        </Level>
+        <Level LID="l000004">
+            <Name>军事改革</Name>
+            <Content>+10军事人口<![CDATA[<sprite name="Pop">]]>上限;30秒内+20%单位<![CDATA[<sprite name="ATK">]]>/<![CDATA[<sprite name="DEF">]]>。</Content>
+        </Level>
+        <Level LID="l000005">
+            <Name>经济改革</Name>
+            <Content>工人<![CDATA[<sprite name="Food">]]>/<![CDATA[<sprite name="Gold">]]>运载量+25%、+20%<![CDATA[<sprite name="Pdct">]]>。</Content>
+        </Level>
+        <Level LID="l000006">
+            <Name>行政改革</Name>
+            <Content>+8政策<![CDATA[<sprite name="Policy">]]>槽位，+30%建筑速度;赠送3次免费的政策<![CDATA[<sprite name="Policy">]]>抽卡。</Content>
+        </Level>
+        <Level LID="l000007">
+            <Name>文化改革</Name>
+            <Content>研发的科技<![CDATA[<sprite name="Tech">]]>能提供15<![CDATA[<sprite name="Pdct">]]>;赠送1次免费的科技<![CDATA[<sprite name="Tech">]]>购买。</Content>
+        </Level>
+    </Civilization>
+    
+    <Civilization CID="c001" >
+        <Level LID="l001000">
+            <Name>建立卫所</Name>
+            <Content>所有单位<![CDATA[<sprite name="ATK">]]>/<![CDATA[<sprite name="DEF">]]>+2，每个军事类建筑每秒产出1<![CDATA[<sprite name="Food">]]>。</Content>
+        </Level>
+        <Level LID="l001001">
+            <Name>发行宝钞</Name>
+            <Content>升级后立刻获得100<![CDATA[<sprite name="Gold">]]>。升级到王国的速度翻倍。</Content>
+        </Level>
+        <Level LID="l001002">
+            <Name>设立内阁</Name>
+            <Content>+6政策<![CDATA[<sprite name="Policy">]]>槽位;赠送4次免费的政策<![CDATA[<sprite name="Policy">]]>抽卡。</Content>
+        </Level>
+        <Level LID="l001003">
+            <Name>编修大典</Name>
+            <Content>所有王国科技<![CDATA[<sprite name="Tech">]]>研发时间-20%，每次研发科技<![CDATA[<sprite name="Tech">]]>返还20%的费用。</Content>
+        </Level>
+        <Level LID="l001004">
+            <Name>推行募兵制</Name>
+            <Content>所有单位+15%<![CDATA[<sprite name="ATK">]]>/<![CDATA[<sprite name="DEF">]]>，+10%<![CDATA[<sprite name="HP">]]>。立刻赠送5个免费的【梨花枪兵】和【刀剑手】。</Content>
+        </Level>
+        <Level LID="l001005">
+            <Name>货币白银化</Name>
+            <Content><![CDATA[<sprite name="Pdct">]]>+15%，税收<![CDATA[<sprite name="Tax">]]>效率+20%;工人每次卸下<![CDATA[<sprite name="Food">]]>/<![CDATA[<sprite name="Gold">]]>时都会额外获得1点<![CDATA[<sprite name="Gold">]]>。</Content>
+        </Level>
+        <Level LID="l001006">
+            <Name>设立东西厂</Name>
+            <Content>+8政策<![CDATA[<sprite name="Policy">]]>槽位，建筑速度+25%，赠送4次免费的政策<![CDATA[<sprite name="Policy">]]>抽卡。</Content>
+        </Level>
+        <Level LID="l001007">
+            <Name>朝贡贸易</Name>
+            <Content>所有帝国科技<![CDATA[<sprite name="Tech">]]>研发时间-30%，赠送一个免费的满级【市场】。</Content>
+        </Level>
+    </Civilization>
+    
+    <Civilization CID="c002" >
+        <Level LID="l002000">
+            <Name>巴黎高等法院</Name>
+            <Content>+4政策<![CDATA[<sprite name="Policy">]]>槽位;赠送2次免费的政策<![CDATA[<sprite name="Policy">]]>抽卡;每次击杀获得的<![CDATA[<sprite name="ActionPoint">]]>+1。</Content>
+        </Level>
+        <Level LID="l002001">
+            <Name>审计院</Name>
+            <Content>每次税收量<![CDATA[<sprite name="Tax">]]>+3。工人<![CDATA[<sprite name="Food">]]>/<![CDATA[<sprite name="Gold">]]>运载量+2。</Content>
+        </Level>
+        <Level LID="l002002">
+            <Name>巴黎大学</Name>
+            <Content>科技<![CDATA[<sprite name="Tech">]]>研发速度+10%;赠送1次免费的科技<![CDATA[<sprite name="Tech">]]>购买。</Content>
+        </Level>
+        <Level LID="l002003">
+            <Name>王家敕令骑兵</Name>
+            <Content> 赠送5个【重骑兵】。解锁建筑【集结点】（能作为出兵点使用的建筑）。</Content>
+        </Level>
+        <Level LID="l002004">
+            <Name>绝对君主制</Name>
+            <Content>+8政策<![CDATA[<sprite name="Policy">]]>槽位，+15%建筑速度，<![CDATA[<sprite name="ActionPoint">]]>的获取效率+30%。</Content>
+        </Level>
+        <Level LID="l002005">
+            <Name>沃邦防御体系</Name>
+            <Content>赠送一个免费的【要塞】，要塞的建造速度+30%，在建筑附近的单位<![CDATA[<sprite name="DEF">]]>+5。</Content>
+        </Level>
+        <Level LID="l002006">
+            <Name>殖民地贸易</Name>
+            <Content><![CDATA[<sprite name="Food">]]>/<![CDATA[<sprite name="Gold">]]>兑换损耗归零，每个经济建筑能提供50<![CDATA[<sprite name="Pdct">]]>。</Content>
+        </Level>
+        <Level LID="l002007">
+            <Name>法国文艺复兴</Name>
+            <Content>根据当前已研发的科技<![CDATA[<sprite name="Tech">]]>，每个立刻赠送30<![CDATA[<sprite name="Gold">]]>和15<![CDATA[<sprite name="Pdct">]]>。</Content>
+        </Level>
+    </Civilization>
+    
+    <Civilization CID="c003" >
+        <Level LID="l003000">
+            <Name>科穆宁体制</Name>
+            <Content>+2政策<![CDATA[<sprite name="Policy">]]>槽位，在王国时期每建成一个建筑后可获得1次免费的政策<![CDATA[<sprite name="Policy">]]>抽卡。</Content>
+        </Level>
+        <Level LID="l003001">
+            <Name>普洛尼亚制</Name>
+            <Content>士兵的补给<![CDATA[<sprite name="Maintain">]]>需求-20%(骑兵额外-30%);每建成一个建筑或完成一项建筑升级后可获得1个免费的重骑兵/甲胄骑兵。</Content>
+        </Level>
+        <Level LID="l003002">
+            <Name>海培伦金币</Name>
+            <Content>立刻获得100<![CDATA[<sprite name="Gold">]]>，税收<![CDATA[<sprite name="Tax">]]>+5;赠送一个满级的【矿场】。</Content>
+        </Level>
+        <Level LID="l003003">
+            <Name>科穆宁文艺复兴</Name>
+            <Content>解锁【学院】;赠送1次免费的科技<![CDATA[<sprite name="Tech">]]>购买。</Content>
+        </Level>
+        <Level LID="l003004">
+            <Name>发动十字军</Name>
+            <Content>每个已解锁兵种各获得一支免费援军，数量等于该兵种的预备役上限。</Content>
+        </Level>
+        <Level LID="l003005">
+            <Name>稳定贸易霸权</Name>
+            <Content>税收量<![CDATA[<sprite name="Tax">]]>+10;赠送一个满级【市场】和两个满级【石墙】;但士兵生产速度-20%。</Content>
+        </Level>
+        <Level LID="l003006">
+            <Name>合并东西教会</Name>
+            <Content>+8政策<![CDATA[<sprite name="Policy">]]>槽位;【圣索菲亚大教堂】的建造速度+100%。</Content>
+        </Level>
+        <Level LID="l003007">
+            <Name>全能者修道院医院</Name>
+            <Content>宗教单位的治疗效率+200%、预备役+2，生产速度+100%。</Content>
+        </Level>
+    </Civilization>
+    
+    <Civilization CID="c004" >
+        <Level LID="l004000">
+            <Name>千户制改革</Name>
+            <Content>单位生产速度+10%，蒙古包能提供的军事人口<![CDATA[<sprite name="Pop">]]>数量+2。</Content>
+        </Level>
+        <Level LID="l004001">
+            <Name>颁布大扎撒</Name>
+            <Content>+4政策<![CDATA[<sprite name="Policy">]]>槽位，+5苏鲁锭，苏鲁锭购买项目的刷新速度+15%。</Content>
+        </Level>
+        <Level LID="l004002">
+            <Name>创制蒙文</Name>
+            <Content>苏鲁锭获取效率+20%，赠送1次免费的科技<![CDATA[<sprite name="Tech">]]>购买。</Content>
+        </Level>
+        <Level LID="l004003">
+            <Name>汉文化</Name>
+            <Content>+8政策<![CDATA[<sprite name="Policy">]]>槽位，解锁并赠送5个免费的【梨花枪兵】;赠送4次免费的政策<![CDATA[<sprite name="Policy">]]>抽卡。</Content>
+        </Level>
+        <Level LID="l004004">
+            <Name>伊斯兰文化</Name>
+            <Content>苏鲁锭购买项目的刷新速度+30%;<![CDATA[<sprite name="Food">]]>/<![CDATA[<sprite name="Gold">]]>兑换损耗归零。</Content>
+        </Level>
+        <Level LID="l004005">
+            <Name>喇嘛教文化</Name>
+            <Content>+15苏鲁锭;【可汗】与【蒙古大汗】对周围单位的加成量+50%。</Content>
+        </Level>
+    </Civilization>
+    
+    <Civilization CID="c005" >
+        <Level LID="l005000">
+            <Name>严党</Name>
+            <Content>立刻获得100<![CDATA[<sprite name="Gold">]]>。内阁大学士槽位+2。升级到王国的速度+40%。</Content>
+        </Level>
+        <Level LID="l005001">
+            <Name>清流</Name>
+            <Content>立刻获得100<![CDATA[<sprite name="ActionPoint">]]>，官员的价格-30%。内阁大学士槽位+2。</Content>
+        </Level>
+        <Level LID="l005002">
+            <Name>东林党</Name>
+            <Content>立刻获得200<![CDATA[<sprite name="ActionPoint">]]>，官员的刷新速度+50%。内阁大学士槽位+2。</Content>
+        </Level>
+        <Level LID="l005003">
+            <Name>阉党</Name>
+            <Content>立刻获得250<![CDATA[<sprite name="Gold">]]>。内阁大学士槽位+2。升级到帝国的速度+30%。</Content>
+        </Level>
+    </Civilization>
+    
+    <Civilization CID="c006" >
+        <Level LID="l006000">
+            <Name>圣女贞德</Name>
+            <Content>平民阶层+6忠诚度，同时立刻获得4个免费的【骑兵】和【长矛手】。</Content>
+        </Level>
+        <Level LID="l006001">
+            <Name>克莱孟五世</Name>
+            <Content>教士阶层+6忠诚度，此后每两次收<![CDATA[<sprite name="Tax">]]>就能获得1点国王权威。</Content>
+        </Level>
+        <Level LID="l006002">
+            <Name>阿马尼亚克派</Name>
+            <Content>贵族阶层+6忠诚度，解锁建筑【集结点】(能作为出兵点使用的建筑)，同时立刻获得80<![CDATA[<sprite name="Gold">]]>和100<![CDATA[<sprite name="Food">]]>。</Content>
+        </Level>
+        <Level LID="l006003">
+            <Name>黎塞留</Name>
+            <Content>国王权威上限+5，同时立刻获得5国王权威;开会后带来的临时加成效果延长30%。</Content>
+        </Level>
+        <Level LID="l006004">
+            <Name>沃邦</Name>
+            <Content>赠送一个免费的【要塞】，要塞的建造速度+30%，在建筑附近的单位<![CDATA[<sprite name="DEF">]]>+5。</Content>
+        </Level>
+    </Civilization>
+    
+    <Civilization CID="c007" >
+        <Level LID="l007000">
+            <Name>波兰</Name>
+            <Content>每个已解锁兵种各获得一支人数为5的援军。所有拒马的<![CDATA[<sprite name="DEF">]]>+5。</Content>
+        </Level>
+        <Level LID="l007001">
+            <Name>热那亚</Name>
+            <Content>帝国声望+2，经济科技<![CDATA[<sprite name="Tech">]]>的研发速度+20%。此后每获得一点帝国声望都能立刻获得15<![CDATA[<sprite name="Gold">]]>。</Content>
+        </Level>
+        <Level LID="l007002">
+            <Name>教皇国</Name>
+            <Content>帝国声望+8，此前花费帝国声望购买的项目可以再次购买。</Content>
+        </Level>
+        <Level LID="l007003">
+            <Name>神圣罗马帝国</Name>
+            <Content>帝国声望+8，赠送1次免费的科技<![CDATA[<sprite name="Tech">]]>购买;此后每获得一点帝国声望都能得到20点<![CDATA[<sprite name="Pdct">]]>。</Content>
+        </Level>
+    </Civilization>
+</root>

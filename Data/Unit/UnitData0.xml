@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+        <!ELEMENT root ANY>
+        <!ELEMENT Unit (Name+,Content+)>
+            <!ATTLIST Unit 
+                    UID ID #REQUIRED
+                    fileName CDATA #REQUIRED
+            >
+        <!ELEMENT Name (#PCDATA) >
+        <!ELEMENT Content (#PCDATA)>
+]>
+<!---->
+<!-- ID [u00000] 0:player 1:工人 2:步兵 3:远程 4:骑兵 5:火药 6：攻城武器 7：建筑-->
+<!---->
+
+<root>
+    <Unit  UID="u1000" fileName="Worker" >
+        <Name>
+            工人
+        </Name>
+        <Content>
+            可以在资源采集点采集资源并带回基地。请通过点击地图上资源点附近的“+”和“-”派遣工人。
+        </Content>
+    </Unit>
+    <Unit  UID="u2000"  fileName="Militiaman">
+        <Name>
+            民兵
+        </Name>
+        <Content>
+            弱小的步兵系单位。
+        </Content>
+    </Unit>
+    <Unit  UID="u2001"  fileName="Swordsman">
+        <Name>
+            刀剑手
+        </Name>
+        <Content>
+            普通的步兵系单位。
+        </Content>
+    </Unit>
+    <Unit  UID="u2002"  fileName="Spearman">
+        <Name>
+            长矛手
+        </Name>
+        <Content>
+            攻击能造成击退效果的步兵系单位。擅长对付骑兵。
+        </Content>
+    </Unit>
+    <Unit  UID="u2003"  fileName="Shielder">
+        <Name>
+            盾兵
+        </Name>
+        <Content>
+            血厚防高，但进攻能力弱的重甲步兵系单位。
+        </Content>
+    </Unit>
+    <Unit  UID="u2004"  fileName="LiHuaQiang">
+        <Name>
+            梨花枪兵
+        </Name>
+        <Content>
+            大明独有的步兵系单位。更强的击退效果，且每5次攻击能造成一次暴击(四倍伤害)。擅长对付骑兵。
+        </Content>
+    </Unit>
+    <Unit  UID="u2005"  fileName="FrenchGuard">
+        <Name>
+            法兰西近卫兵
+        </Name>
+        <Content>
+            法兰西独有的步兵系单位。攻击力更强、速度更快的长矛兵。擅长对付近战单位，受远程单位克制。
+        </Content>
+    </Unit>
+    <Unit  UID="u2006"  fileName="Varangian">
+        <Name>
+            瓦兰吉卫队
+        </Name>
+        <Content>
+            拜占庭独有的步兵系单位。不消耗补给，攻击力更高，防御力稍低。擅长对付建筑。
+        </Content>
+    </Unit>
+    <Unit  UID="u2007"  fileName="QianJun">
+        <Name>
+            签军
+        </Name>
+        <Content>
+            蒙古独有的步兵单位，战斗力不高，但预备役数量更多、补给消耗更多。
+        </Content>
+    </Unit>
+    <Unit  UID="u2008"  fileName="RusLordsSoldier">
+        <Name>
+            罗斯诸侯兵
+        </Name>
+        <Content>
+            蒙古金帐汗国派系独有的步兵系单位。比签军稍强的步兵单位。
+        </Content>
+    </Unit>
+    <Unit  UID="u3000" fileName="Archer" >
+        <Name>
+            弓箭手
+        </Name>
+        <Content>
+            普通的弓弩系单位。
+        </Content>
+    </Unit>
+    <Unit  UID="u3002" fileName="CavalryArcher" >
+        <Name>
+            弓骑兵
+        </Name>
+        <Content>
+            高机动性的弓弩系单位，弓骑兵在受到攻击后会后退至射击距离后再射击。
+        </Content>
+    </Unit>
+    <Unit  UID="u3003" fileName="ZhuGeLianNu" >
+        <Name>
+            诸葛连弩
+        </Name>
+        <Content>
+            大明独有的弓弩系单位。一次射击能射出三支箭矢。
+        </Content>
+    </Unit>
+    <Unit  UID="u3004" fileName="Kheshig" >
+        <Name>
+            怯薛
+        </Name>
+        <Content>
+            蒙古独有的弓弩系单位。怯薛会自动保持与当前射击对象的距离。
+        </Content>
+    </Unit>
+    <Unit  UID="u3005" fileName="Khan" >
+        <Name>
+            可汗
+        </Name>
+        <Content>
+            能为附近单位提供加成的的弓弩系单位。战斗机制与怯薛相同。一方场上只能有一位可汗。
+        </Content>
+    </Unit>
+    <Unit  UID="u3006" fileName="MongoliaKhan" >
+        <Name>
+            蒙古大汗
+        </Name>
+        <Content>
+            蒙古独有的弓弩系单位。攻击力、生命值、作用范围更大的可汗。一方场上只能有一位蒙古大汗。
+        </Content>
+    </Unit>
+    <Unit  UID="u4000" fileName="Cavalryman" >
+        <Name>
+            骑兵
+        </Name>
+        <Content>
+            快速机动的骑兵系单位。擅长对付远程单位。
+        </Content>
+    </Unit>
+    <Unit  UID="u4001" fileName="LightCavalryman" >
+        <Name>
+            轻骑兵
+        </Name>
+        <Content>
+            移速更高，攻击力和防御力稍小的骑兵系单位。
+        </Content>
+    </Unit>
+    <Unit  UID="u4002" fileName="HeavyCavalryman" >
+        <Name>
+            重骑兵
+        </Name>
+        <Content>
+            移速稍慢，攻击力和防御力较大的重甲骑兵系单位。
+        </Content>
+    </Unit>
+    <Unit  UID="u4003" fileName="BourbonCavalryman" >
+        <Name>
+            敕令骑士
+        </Name>
+        <Content>
+            法兰西独有的重甲骑兵系单位。速度稍快、攻击力和防御力更高，具有更大的冲击力。
+        </Content>
+    </Unit>
+    <Unit  UID="u4004" fileName="Tagma" >
+        <Name>
+            甲胄骑兵
+        </Name>
+        <Content>
+            拜占庭独有的重甲骑兵系单位。防御力更高、移动速度稍低。擅长对付步兵。
+        </Content>
+    </Unit>
+    <Unit  UID="u4005" fileName="NomadicCavalry" >
+        <Name>
+            游牧骑兵
+        </Name>
+        <Content>
+            蒙古独有的骑兵系单位。极为便宜的骑兵，战斗力较普通骑兵偏低。
+        </Content>
+    </Unit>
+    <Unit  UID="u4006" fileName="Batu" >
+        <Name>
+            拔突
+        </Name>
+        <Content>
+            蒙古独有的骑兵系单位。速度更快，攻击更高的轻骑兵。如果在下次补给前击杀了单位，则下次补给时不消耗食物。
+        </Content>
+    </Unit>
+    <Unit  UID="u4007" fileName="Daorhan" >
+        <Name>
+            达尔罕
+        </Name>
+        <Content>
+            蒙古独有的骑兵系单位。速度更快的重骑兵，擅长攻击建筑。
+        </Content>
+    </Unit>
+    <Unit  UID="u5000" fileName="HandCannon" >
+        <Name>
+            火门枪手
+        </Name>
+        <Content>
+            早期火药系单位，伤害高但远程精度较差。擅长对付重甲单位。
+        </Content>
+    </Unit>
+    <Unit  UID="u5001" fileName="Musketeers" >
+        <Name>
+            火枪手
+        </Name>
+        <Content>
+            普通的火药系单位，伤害高但远程精度较差。
+        </Content>
+    </Unit>
+    <Unit  UID="u5002" fileName="Artilleryman" >
+        <Name>
+            炮手
+        </Name>
+        <Content>
+            能造成范围伤害的火药系单位。
+        </Content>
+    </Unit>
+    <Unit  UID="u5003" fileName="HuDunPao" >
+        <Name>
+            虎蹲炮
+        </Name>
+        <Content>
+            大明独有火药系单位。机动性较强、但射程较近的炮兵单位。擅长对付远程单位。
+        </Content>
+    </Unit>
+    <Unit  UID="u5004" fileName="SanYanChongBing" >
+        <Name>
+            三眼铳兵
+        </Name>
+        <Content>
+            大明独有火药系单位。每三次发射的间隔较短。
+        </Content>
+    </Unit>
+    <Unit  UID="u5005" fileName="BayonetMusketeer" >
+        <Name>
+            刺刀火枪手
+        </Name>
+        <Content>
+            法兰西独有火药系单位。同时具备近身战斗与远程战斗能力的火枪手单位。
+        </Content>
+    </Unit>
+    <Unit  UID="u5006" fileName="GreekFireThrower" >
+        <Name>
+            希腊火喷射手
+        </Name>
+        <Content>
+            拜占庭独有火药系单位。能持续喷出可在范围内造成持续性伤害的火焰，射程短。
+        </Content>
+    </Unit>
+    <Unit  UID="u5007" fileName="GreekFireGrenadier" >
+        <Name>
+            希腊火掷弹兵
+        </Name>
+        <Content>
+            拜占庭独有火药系单位。射程较短，能造成范围伤害，落点范围将生成持续性伤害的火焰。
+        </Content>
+    </Unit>
+    <Unit  UID="u6000" fileName="BatteringRam" >
+        <Name>
+            冲车
+        </Name>
+        <Content>
+            血厚且防御力与攻击力都高的攻城武器系单位，用于攻击建筑、塔楼，不可攻击士兵。能防护炮击。
+        </Content>
+    </Unit>
+    <Unit  UID="u6002" fileName="HuihuiPao" >
+        <Name>
+            回回炮
+        </Name>
+        <Content>
+            蒙古独有的攻城武器系单位。比火炮更便宜，训练时间更短，但射击准备时间更长。
+        </Content>
+    </Unit>
+    <Unit  UID="u8000" fileName="Monk" >
+        <Name>
+            僧侣
+        </Name>
+        <Content>
+            无战斗能力的支援系单位，能恢复周围附近一名士兵单位的生命值。
+        </Content>
+    </Unit>
+    <Unit  UID="u8001" fileName="Patriarch" >
+        <Name>
+            牧首
+        </Name>
+        <Content>
+            无战斗能力的支援系单位，能恢复范围内所有士兵单位的生命值。
+        </Content>
+    </Unit>
+    
+    
+</root>

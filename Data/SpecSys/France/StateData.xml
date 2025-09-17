@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+        <!ELEMENT root ANY>
+        
+        <!ELEMENT State (Loyal+, Rebel+,Request+,Satisfied+,Please+)>
+        <!ELEMENT Request (Buff+)>
+        <!ELEMENT Satisfied (Buff+)>
+        <!ELEMENT Please (Buff+)>
+        <!ATTLIST State
+                ID ID #REQUIRED
+                Name CDATA #REQUIRED
+                >
+        <!ATTLIST Loyal
+                Name CDATA #REQUIRED
+                >
+        <!ATTLIST Rebel
+                Name CDATA #REQUIRED
+                >
+        <!ELEMENT Loyal (#PCDATA) >
+        <!ELEMENT Rebel (#PCDATA) >
+        <!ELEMENT Buff (#PCDATA) >
+        ]>
+<root>
+    <State ID="s0" Name="教士阶层">
+        <Loyal Name="阿维尼翁教廷">
+            立刻获得150<![CDATA[<sprite name="Gold">]]>，税收<![CDATA[<sprite name="Tax">]]>+150%，每次击杀可获得三倍的<![CDATA[<sprite name="ActionPoint">]]>。        </Loyal>
+        <Rebel Name="胡格诺派起义">
+            税收<![CDATA[<sprite name="Tax">]]>-90%。        </Rebel>
+        <Request>
+            <Buff>
+                +{x}%税收<![CDATA[<sprite name="Tax">]]>效率
+            </Buff>
+            <Buff>
+                +{x}税收<![CDATA[<sprite name="Tax">]]>
+            </Buff>
+            <Buff>
+                会议结束后立刻获得{x}<![CDATA[<sprite name="Gold">]]>。
+            </Buff>
+        </Request>
+        <Satisfied>
+            <Buff>
+                +17%税收<![CDATA[<sprite name="Tax">]]>效率。
+            </Buff>
+        </Satisfied>
+        <Please>
+            <Buff>
+                +{x}%税收<![CDATA[<sprite name="Tax">]]>
+            </Buff>
+            <Buff>
+                +{x}每次击杀额外获得的行政点数<![CDATA[<sprite name="ActionPoint">]]>
+            </Buff>
+            <Buff>
+                会议结束后{t}秒内，行政<![CDATA[<sprite name="Pdct">]]>+{x}%。
+            </Buff>
+        </Please>
+    </State>
+    <State ID="s1" Name="贵族阶层">
+        <Loyal Name="朕即国家">
+            单位<![CDATA[<sprite name="ATK">]]>/<![CDATA[<sprite name="DEF">]]>+50%，单位<![CDATA[<sprite name="HP">]]>+50%，+50%单位生产速度。        </Loyal>
+        <Rebel Name="投石党之乱">
+            单位生产速度-60%。
+        </Rebel>
+        <Request>
+            <Buff>
+                -{x}%科研<![CDATA[<sprite name="Tech">]]>速度
+            </Buff>
+            <Buff>
+                -{x}%单位造价
+            </Buff>
+            <Buff>
+                会议结束后立刻获得{x}<![CDATA[<sprite name="Gold">]]>。
+            </Buff>
+        </Request>
+        <Satisfied>
+            <Buff>
+                +15%科研<![CDATA[<sprite name="Tech">]]>速度。
+            </Buff>
+        </Satisfied>
+        <Please>
+            <Buff>
+                +{x}%科研<![CDATA[<sprite name="Tech">]]>速度
+            </Buff>
+            <Buff>
+                +{x}%单位生产速度
+            </Buff>
+            <Buff>
+                会议结束后{t}秒内，所有单位<![CDATA[<sprite name="ATK">]]>/<![CDATA[<sprite name="DEF">]]>+{x}%。
+            </Buff>
+        </Please>
+    </State>
+    <State ID="s2" Name="平民阶层">
+        <Loyal Name="柯尔贝尔主义">
+            +50%建筑建造/升级/维修速度，+30%<![CDATA[<sprite name="Pdct">]]>，+50%工人<![CDATA[<sprite name="SPD">]]>和工作速度，+10开会前可累积的国王权威上限。        </Loyal>
+        <Rebel Name="攻占巴士底狱">
+            -30%<![CDATA[<sprite name="Pdct">]]>，-3工人人口上限，-50%工人移动速度。        </Rebel>
+        <Request>
+            <Buff>
+                工人<![CDATA[<sprite name="SPD">]]>和工作速度+{x}%
+            </Buff>
+            <Buff>
+                -{x}%<![CDATA[<sprite name="Pdct">]]>
+            </Buff>            
+            <Buff>
+                会议结束后立刻获得{x}<![CDATA[<sprite name="Gold">]]>。
+            </Buff>
+        </Request>
+        <Satisfied>
+            <Buff>
+                +15%建筑建造/升级/维修速度。
+            </Buff>
+        </Satisfied>
+        <Please>
+            <Buff>
+                +{x}%建筑建造/升级/维修速度
+            </Buff>
+            <Buff>
+                +{x}开会前可累积的国王权威上限
+            </Buff>
+            <Buff>
+                会议结束后{t}秒内，经济<![CDATA[<sprite name="Pdct">]]>+{x}%。
+            </Buff>
+        </Please>
+    </State>
+</root>
